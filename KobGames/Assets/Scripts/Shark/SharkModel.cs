@@ -14,8 +14,10 @@ public class SharkModel : MonoBehaviour
     private Transform _StartNode;
 
     public Vector3Event StartPostUpdate = new Vector3Event();
+    public UnityEvent CallWarningVFX = new UnityEvent();
 
     bool _StartAtLeft = true;
+    public bool StartAtLeft { get { return _StartAtLeft; } }
 
     [SerializeField]
     private Transform _TransformObject;
@@ -39,11 +41,6 @@ public class SharkModel : MonoBehaviour
         _manualTimer = 0;
 
         _StartAtLeft = !_StartAtLeft;
-        if (_StartAtLeft)
-        {
-            
-        }
-
     }
 
     private void FixedUpdate()
@@ -51,8 +48,13 @@ public class SharkModel : MonoBehaviour
         if (_Started)
             return;
 
+
         if(_manualTimer < _Cooldown)
         {
+            if (_manualTimer < (_Cooldown - .5f))
+            {
+                CallWarningVFX.Invoke();
+            }
             _manualTimer += Time.deltaTime;
         }
         else

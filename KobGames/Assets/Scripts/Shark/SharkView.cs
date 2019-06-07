@@ -17,14 +17,21 @@ public class SharkView : MonoBehaviour
     [SerializeField]
     private float _Speed = 2;
 
-    public UnityEvent _TargetReachedEvent = new UnityEvent();
-    public Vector3Event _TargetPosEvent = new Vector3Event();
+    public UnityEvent TargetReachedEvent = new UnityEvent();
+    public Vector3Event TargetPosEvent = new Vector3Event();
+    public UnityEvent TriggerObstacle = new UnityEvent();
+
+    bool _StartAtLeft;
+
+    [SerializeField]
+    private GameObject _LeftVFXStart, _LefVFXtEnd, _RightVFXStart, _RightVFXEnd;
 
     float _RotDamper = 0;
+    int _PathCounter = 0;
 
     private void Start()
     {
-        _TargetPosEvent.AddListener(_ =>
+        TargetPosEvent.AddListener(_ =>
         {
             _TargetNode = _;
         });
@@ -36,13 +43,27 @@ public class SharkView : MonoBehaviour
 
     public void EndOfPath()
     {
+
         _StartPath = false;
     }
 
-    public void TriggerTrap(List<Vector3> path)
+    public void InitWarningVFX()
     {
+        GameObject obj = _StartAtLeft ? _RightVFXStart : _LeftVFXStart;
+        obj.SetActive(true);
+    }
+
+    public void TriggerTrap(List<Vector3> path,bool startAtLeft)
+    {
+        _StartAtLeft = startAtLeft;
         _NodePath = path;
         _TargetNode = _NodePath[0];
+
+        _LeftVFXStart.SetActive(false);
+        _LefVFXtEnd.SetActive(false);
+        _RightVFXEnd.SetActive(false);
+        _RightVFXStart.SetActive(false);
+        _PathCounter = 0;
         _StartPath = true;
     }
 
@@ -60,7 +81,13 @@ public class SharkView : MonoBehaviour
         if (Vector3.Distance(_MovableTransform.position, _TargetNode) < .5f)
         {
             _RotDamper = 0;
-            _TargetReachedEvent.Invoke();
+            _PathCounter++;
+            if(_PathCounter == 4)
+            {
+                GameObject obj = _StartAtLeft ? _RightVFXEnd : _LefVFXtEnd;
+                obj.SetActive(true);
+            }
+            TargetReachedEvent.Invoke();
         }
         _RotDamper += Time.deltaTime * 15;
         var lookPos = _TargetNode - _MovableTransform.position;

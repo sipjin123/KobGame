@@ -23,6 +23,8 @@ public class UIHandler : MonoBehaviour
 
     void Start()
     {
+        _TitleCanvas.enabled = true;
+
         _GameStateObj.ChangeState.AddListener(_ =>
         {
             switch (_)

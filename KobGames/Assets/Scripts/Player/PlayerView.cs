@@ -41,11 +41,20 @@ public class PlayerView : MonoBehaviour, IView
 
     float _RotDamp;
 
+    [SerializeField]
+
+    private GameObject _KnockOutVFX;
+
     void Start()
     {
         SpeedEvent.AddListener(_ => _Speed = _);
         RunEvent.AddListener(_ => _RunFlag = _);
-        DeadEvent.AddListener(_ => _IsDeadFlag = _);
+        DeadEvent.AddListener(_ =>
+        {
+            _IsDeadFlag = _;
+            if (_IsDeadFlag)
+                _KnockOutVFX.SetActive(true);
+        });
         TargetPosEvent.AddListener(_ => 
         {
             _RotDamp = 0;

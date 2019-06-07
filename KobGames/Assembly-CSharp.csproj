@@ -62,6 +62,16 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Models\JMO Assets\Cartoon FX\Demo\Assets\CFX_AutoStopLoopedEffect.cs" />
+    <Compile Include="Assets\Models\JMO Assets\Cartoon FX\Demo\Assets\CFX_Demo_New.cs" />
+    <Compile Include="Assets\Models\JMO Assets\Cartoon FX\Demo\Assets\CFX_Demo_RandomDir.cs" />
+    <Compile Include="Assets\Models\JMO Assets\Cartoon FX\Demo\Assets\CFX_Demo_RandomDirectionTranslate.cs" />
+    <Compile Include="Assets\Models\JMO Assets\Cartoon FX\Demo\Assets\CFX_Demo_RotateCamera.cs" />
+    <Compile Include="Assets\Models\JMO Assets\Cartoon FX\Demo\Assets\CFX_Demo_Translate.cs" />
+    <Compile Include="Assets\Models\JMO Assets\Cartoon FX\Scripts\CFX_AutoDestructShuriken.cs" />
+    <Compile Include="Assets\Models\JMO Assets\Cartoon FX\Scripts\CFX_AutoRotate.cs" />
+    <Compile Include="Assets\Models\JMO Assets\Cartoon FX\Scripts\CFX_LightFlicker.cs" />
+    <Compile Include="Assets\Models\JMO Assets\Cartoon FX\Scripts\CFX_LightIntensityFade.cs" />
     <Compile Include="Assets\Scripts\Data\CharacterData.cs" />
     <Compile Include="Assets\Scripts\Data\GameLevelData.cs" />
     <Compile Include="Assets\Scripts\Data\GameStateEventObj.cs" />
@@ -69,6 +79,7 @@
     <Compile Include="Assets\Scripts\Interface\IModel.cs" />
     <Compile Include="Assets\Scripts\Interface\IView.cs" />
     <Compile Include="Assets\Scripts\Interface\IViewAnimation.cs" />
+    <Compile Include="Assets\Scripts\PassiveSpinner.cs" />
     <Compile Include="Assets\Scripts\Platform\PlatformController.cs" />
     <Compile Include="Assets\Scripts\Platform\PlatformManager.cs" />
     <Compile Include="Assets\Scripts\Platform\PlatformModel.cs" />
@@ -78,11 +89,21 @@
     <Compile Include="Assets\Scripts\Player\PlayerModel.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerView.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerViewAnimation.cs" />
+    <Compile Include="Assets\Scripts\Shark\CollisionHandler.cs" />
+    <Compile Include="Assets\Scripts\Shark\SharkController.cs" />
+    <Compile Include="Assets\Scripts\Shark\SharkModel.cs" />
+    <Compile Include="Assets\Scripts\Shark\SharkView.cs" />
+    <Compile Include="Assets\Scripts\Shark\SharkViewAnimator.cs" />
+    <Compile Include="Assets\Scripts\UIHandler.cs" />
     <Compile Include="Assets\Scripts\Utils\AnimConstants.cs" />
     <Compile Include="Assets\Scripts\Utils\CreateScriptableObj.cs" />
     <Compile Include="Assets\Scripts\Utils\Enums.cs" />
     <Compile Include="Assets\Scripts\Utils\Events.cs" />
     <Compile Include="Assets\Scripts\Utils\Factory.cs" />
+    <None Include="Assets\Models\JMO Assets\Cartoon FX\Shaders\CFX3 Multiply Color.shader" />
+    <None Include="Assets\Models\JMO Assets\Cartoon FX\Shaders\CFXM_MobileParticleAdd_Alpha8.shader" />
+    <None Include="Assets\Models\JMO Assets\Cartoon FX\CartoonFX Free.txt" />
+    <None Include="Assets\Models\JMO Assets\Cartoon FX Easy Editor\CartoonFX Easy Editor Readme.txt" />
     <None Include="Assets\Models\Mr. Mo Base Character\Readme.txt" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>D:/Projects/UnityEngineProjects/KobGamesRepo/KobGames/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>

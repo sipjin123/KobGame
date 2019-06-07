@@ -24,7 +24,12 @@ public class SharkController : MonoBehaviour
             _GameStateObj.ChangeState.Invoke(GameStates.Results);
         });
 
-        _SharkView._TargetReachedEvent.AddListener(() =>
+        _SharkModel.CallWarningVFX.AddListener(() => 
+        {
+            _SharkView.InitWarningVFX();
+        });
+
+        _SharkView.TargetReachedEvent.AddListener(() =>
         {
             var temp = _SharkModel.GetNextNode();
             if (temp == Vector3.zero)
@@ -34,7 +39,7 @@ public class SharkController : MonoBehaviour
                 _SharkModel.Return();
                 return;
             }
-            _SharkView._TargetPosEvent.Invoke(temp);
+            _SharkView.TargetPosEvent.Invoke(temp);
         });
         _SharkModel.StartPostUpdate.AddListener(_ => 
         {
@@ -42,7 +47,7 @@ public class SharkController : MonoBehaviour
         });
         _SharkModel.TriggerObstacle.AddListener(() => 
         {
-            _SharkView.TriggerTrap(_SharkModel.GetPathList());
+            _SharkView.TriggerTrap(_SharkModel.GetPathList(),_SharkModel.StartAtLeft);
             _SharkViewAnimator.SetAttack();
 
         });
