@@ -50,8 +50,20 @@ public class PlayerView : MonoBehaviour, IView
         });
     }
 
+    void LookAtTarget()
+    {
+        if (_MovableTransform)
+        {
+            var lookPos = _TargetNode - _MovableTransform.position;
+            lookPos.y = 0;
+            var rotation = Quaternion.LookRotation(lookPos);
+            _MovableTransform.rotation = Quaternion.Slerp(_MovableTransform.rotation, rotation, Time.deltaTime * 50);
+        }
+    }
+
     void FixedUpdate()
     {
+        LookAtTarget();
         if (!_RunFlag)
             return;
 
@@ -59,8 +71,7 @@ public class PlayerView : MonoBehaviour, IView
             {
                 _TargetReachedEvent.Invoke();
             }
-            Debug.LogError("Going to position at " + _Speed);
-            _MovableTransform.position = Vector3.MoveTowards(_MovableTransform.position, _TargetNode, (_Speed * Time.deltaTime));
-            //_CharController.Move(transform.forward * (_Speed * Time.deltaTime));
+
+        _MovableTransform.position = Vector3.MoveTowards(_MovableTransform.position, _TargetNode, (_Speed * Time.deltaTime));
     }
 }

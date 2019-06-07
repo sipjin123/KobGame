@@ -12,23 +12,17 @@ public class PlayerController : GenericController
         if(Input.GetKey(KeyCode.Space))
         {
             _PlayerView._RunEvent.Invoke(true);
+            _PlayerViewAnim.SetTargetSpeed(1);
         }
         else
         {
             _PlayerView._RunEvent.Invoke(false);
+            _PlayerViewAnim.SetTargetSpeed(0);
         }
     }
 
     void Start()
     {
-        /*
-        _PlayerModel.CharStateEvent.AddListener(_ => {
-            if(_ == CharacterStates.Running)
-            {
-                _PlayerView._RunEvent.Invoke(true);
-            }
-        });*/
-
         _PlayerView._TargetReachedEvent.AddListener(() =>
         {
             var temp = _PlayerModel.GetNextNode();

@@ -62,26 +62,28 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\CharacterData.cs" />
-    <Compile Include="Assets\GameStateEventObj.cs" />
+    <Compile Include="Assets\Scripts\Data\CharacterData.cs" />
     <Compile Include="Assets\Scripts\Data\GameLevelData.cs" />
+    <Compile Include="Assets\Scripts\Data\GameStateEventObj.cs" />
     <Compile Include="Assets\Scripts\GameHandler.cs" />
-    <Compile Include="Assets\Scripts\GenericController.cs" />
-    <Compile Include="Assets\Scripts\IModel.cs" />
-    <Compile Include="Assets\Scripts\IView.cs" />
-    <Compile Include="Assets\Scripts\IViewAnimation.cs" />
+    <Compile Include="Assets\Scripts\Interface\IModel.cs" />
+    <Compile Include="Assets\Scripts\Interface\IView.cs" />
+    <Compile Include="Assets\Scripts\Interface\IViewAnimation.cs" />
     <Compile Include="Assets\Scripts\Platform\PlatformController.cs" />
+    <Compile Include="Assets\Scripts\Platform\PlatformManager.cs" />
     <Compile Include="Assets\Scripts\Platform\PlatformModel.cs" />
     <Compile Include="Assets\Scripts\Platform\PlatformView.cs" />
-    <Compile Include="Assets\Scripts\PlatformManager.cs" />
+    <Compile Include="Assets\Scripts\Player\GenericController.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerController.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerModel.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerView.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerViewAnimation.cs" />
+    <Compile Include="Assets\Scripts\Utils\AnimConstants.cs" />
     <Compile Include="Assets\Scripts\Utils\CreateScriptableObj.cs" />
     <Compile Include="Assets\Scripts\Utils\Enums.cs" />
     <Compile Include="Assets\Scripts\Utils\Events.cs" />
     <Compile Include="Assets\Scripts\Utils\Factory.cs" />
+    <None Include="Assets\Models\Mr. Mo Base Character\Readme.txt" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>D:/Projects/UnityEngineProjects/KobGamesRepo/KobGames/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
