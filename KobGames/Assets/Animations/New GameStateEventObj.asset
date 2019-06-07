@@ -12,3 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e914c06172e9cd348809830fff424783, type: 3}
   m_Name: New GameStateEventObj
   m_EditorClassIdentifier: 
+  ChangeState:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: GameStateEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null

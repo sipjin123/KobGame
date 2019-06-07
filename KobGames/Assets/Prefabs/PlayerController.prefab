@@ -156,7 +156,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _MovableTransform: {fileID: 5726483210778391647}
   _CharController: {fileID: 0}
-  _TargetReachedEvent:
+  TargetReachedEvent:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
@@ -397,6 +397,10 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 18cfbb451e78f654aa5f6cb635c69a92, type: 2}
+    - target: {fileID: 9500000, guid: 176bb58726540db41b891208fbaaf55a, type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 13700000, guid: 176bb58726540db41b891208fbaaf55a, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 

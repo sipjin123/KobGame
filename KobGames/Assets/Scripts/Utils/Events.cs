@@ -30,3 +30,8 @@ public class CharStateEvent : UnityEvent<CharacterStates>
 {
 
 }
+
+public class ObjectEvent : UnityEvent<GameObject>
+{
+
+}

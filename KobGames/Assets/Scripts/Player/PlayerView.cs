@@ -22,11 +22,11 @@ public class PlayerView : MonoBehaviour, IView
     }
 
 
-    public BoolEvent _RunEvent = new BoolEvent();
-    public BoolEvent _DeadEvent = new BoolEvent();
-    public FloatEvent _SpeedEvent = new FloatEvent();
-    public Vector3Event _TargetPosEvent = new Vector3Event();
-    public UnityEvent _TargetReachedEvent = new UnityEvent();
+    public BoolEvent RunEvent = new BoolEvent();
+    public BoolEvent DeadEvent = new BoolEvent();
+    public FloatEvent SpeedEvent = new FloatEvent();
+    public Vector3Event TargetPosEvent = new Vector3Event();
+    public UnityEvent TargetReachedEvent = new UnityEvent();
 
     [SerializeField]
     bool _RunFlag;
@@ -39,13 +39,16 @@ public class PlayerView : MonoBehaviour, IView
     [SerializeField]
     float _Speed;
 
+    float _RotDamp;
+
     void Start()
     {
-        _SpeedEvent.AddListener(_ => _Speed = _);
-        _RunEvent.AddListener(_ => _RunFlag = _);
-        _DeadEvent.AddListener(_ => _IsDeadFlag = _);
-        _TargetPosEvent.AddListener(_ => 
+        SpeedEvent.AddListener(_ => _Speed = _);
+        RunEvent.AddListener(_ => _RunFlag = _);
+        DeadEvent.AddListener(_ => _IsDeadFlag = _);
+        TargetPosEvent.AddListener(_ => 
         {
+            _RotDamp = 0;
             _TargetNode = _;
         });
     }
@@ -54,22 +57,23 @@ public class PlayerView : MonoBehaviour, IView
     {
         if (_MovableTransform)
         {
+            _RotDamp += Time.deltaTime * 3;
             var lookPos = _TargetNode - _MovableTransform.position;
             lookPos.y = 0;
             var rotation = Quaternion.LookRotation(lookPos);
-            _MovableTransform.rotation = Quaternion.Slerp(_MovableTransform.rotation, rotation, Time.deltaTime * 50);
+            _MovableTransform.rotation = Quaternion.Slerp(_MovableTransform.rotation, rotation, _RotDamp);
         }
     }
 
     void FixedUpdate()
     {
         LookAtTarget();
-        if (!_RunFlag)
+        if (!_RunFlag || _IsDeadFlag)
             return;
 
             if (Vector3.Distance(_MovableTransform.position, _TargetNode) < 2)
             {
-                _TargetReachedEvent.Invoke();
+                TargetReachedEvent.Invoke();
             }
 
         _MovableTransform.position = Vector3.MoveTowards(_MovableTransform.position, _TargetNode, (_Speed * Time.deltaTime));

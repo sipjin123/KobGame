@@ -11,19 +11,25 @@ public class PlayerController : GenericController
     {
         if(Input.GetKey(KeyCode.Space))
         {
-            _PlayerView._RunEvent.Invoke(true);
+            _PlayerView.RunEvent.Invoke(true);
             _PlayerViewAnim.SetTargetSpeed(1);
         }
         else
         {
-            _PlayerView._RunEvent.Invoke(false);
+            _PlayerView.RunEvent.Invoke(false);
             _PlayerViewAnim.SetTargetSpeed(0);
         }
     }
 
+    public void Kill()
+    {
+        _PlayerViewAnim.GetAnimator().Play(AnimConstants.ANIM_DIE);
+        _PlayerView.DeadEvent.Invoke(true);
+    }
+
     void Start()
     {
-        _PlayerView._TargetReachedEvent.AddListener(() =>
+        _PlayerView.TargetReachedEvent.AddListener(() =>
         {
             var temp = _PlayerModel.GetNextNode();
             if(temp == null)
@@ -31,7 +37,7 @@ public class PlayerController : GenericController
                 Debug.LogError("End of GAme");
                 return;
             }
-            _PlayerView._TargetPosEvent.Invoke(temp.position);
+            _PlayerView.TargetPosEvent.Invoke(temp.position);
         });
 
         _GameStateObj.ChangeState.AddListener(_ =>
@@ -39,12 +45,11 @@ public class PlayerController : GenericController
             switch(_)
             {
                 case GameStates.Start:
-                    _PlayerView._SpeedEvent.Invoke(_PlayerModel.GetSpeed());
-                    _PlayerView._TargetPosEvent.Invoke(_PlayerModel.CurrentNode.position);
+                    _PlayerView.SpeedEvent.Invoke(_PlayerModel.GetSpeed());
+                    _PlayerView.TargetPosEvent.Invoke(_PlayerModel.CurrentNode.position);
                     _PlayerModel.UpdateState(CharacterStates.Idle);
                     break;
                 case GameStates.Results:
-
                     break;
             }
         });
