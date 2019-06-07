@@ -118,7 +118,7 @@ MonoBehaviour:
   m_MinSize: {x: 700, y: 270}
   m_MaxSize: {x: 4000, y: 4020}
   vertical: 0
-  controlID: 1775
+  controlID: 193
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -168,7 +168,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 120}
   m_MaxSize: {x: 2048, y: 2068}
   vertical: 0
-  controlID: 953
+  controlID: 13
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -237,7 +237,7 @@ MonoBehaviour:
     y: 0
     width: 1832
     height: 1037
-  m_MinSize: {x: 950, y: 300}
+  m_MinSize: {x: 950, y: 444}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &11
 MonoBehaviour:
@@ -302,10 +302,10 @@ MonoBehaviour:
     y: 30
     width: 1832
     height: 987
-  m_MinSize: {x: 813, y: 394}
-  m_MaxSize: {x: 22008, y: 14044}
+  m_MinSize: {x: 811, y: 394}
+  m_MaxSize: {x: 22006, y: 14044}
   vertical: 1
-  controlID: 165
+  controlID: 187
 --- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -328,10 +328,10 @@ MonoBehaviour:
     y: 0
     width: 1832
     height: 987
-  m_MinSize: {x: 813, y: 394}
-  m_MaxSize: {x: 22008, y: 14044}
+  m_MinSize: {x: 811, y: 394}
+  m_MaxSize: {x: 22006, y: 14044}
   vertical: 0
-  controlID: 166
+  controlID: 188
 --- !u!114 &15
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -356,7 +356,7 @@ MonoBehaviour:
   m_MinSize: {x: 432, y: 394}
   m_MaxSize: {x: 14002, y: 14044}
   vertical: 1
-  controlID: 137
+  controlID: 105
 --- !u!114 &16
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -381,7 +381,7 @@ MonoBehaviour:
   m_MinSize: {x: 432, y: 272}
   m_MaxSize: {x: 14002, y: 10022}
   vertical: 0
-  controlID: 138
+  controlID: 61
 --- !u!114 &17
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -483,10 +483,10 @@ MonoBehaviour:
     y: 0
     width: 812
     height: 987
-  m_MinSize: {x: 104, y: 222}
-  m_MaxSize: {x: 4004, y: 8022}
+  m_MinSize: {x: 104, y: 244}
+  m_MaxSize: {x: 4004, y: 8044}
   vertical: 1
-  controlID: 113
+  controlID: 164
 --- !u!114 &21
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -558,8 +558,8 @@ MonoBehaviour:
     y: 0
     width: 526
     height: 987
-  m_MinSize: {x: 277, y: 72}
-  m_MaxSize: {x: 4002, y: 4022}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 34}
   m_Panes:
   - {fileID: 33}
@@ -617,7 +617,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.8
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.ads@2.0.8
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.ads@2.0.8
         m_AssetPath: Packages/com.unity.ads
         m_Name: com.unity.ads
         m_DisplayName: 
@@ -715,7 +715,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.8
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.ads@2.0.8
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.ads@2.0.8
         m_AssetPath: Packages/com.unity.ads
         m_Name: com.unity.ads
         m_DisplayName: 
@@ -813,7 +813,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.8
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.ads@2.0.8
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.ads@2.0.8
         m_AssetPath: Packages/com.unity.ads
         m_Name: com.unity.ads
         m_DisplayName: 
@@ -911,7 +911,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.8
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.ads@2.0.8
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.ads@2.0.8
         m_AssetPath: Packages/com.unity.ads
         m_Name: com.unity.ads
         m_DisplayName: 
@@ -1009,7 +1009,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.8
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.ads@2.0.8
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.ads@2.0.8
         m_AssetPath: Packages/com.unity.ads
         m_Name: com.unity.ads
         m_DisplayName: 
@@ -1107,7 +1107,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.8
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.ads@2.0.8
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.ads@2.0.8
         m_AssetPath: Packages/com.unity.ads
         m_Name: com.unity.ads
         m_DisplayName: 
@@ -1205,7 +1205,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.8
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.ads@2.0.8
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.ads@2.0.8
         m_AssetPath: Packages/com.unity.ads
         m_Name: com.unity.ads
         m_DisplayName: 
@@ -1303,7 +1303,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.8
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.ads@2.0.8
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.ads@2.0.8
         m_AssetPath: Packages/com.unity.ads
         m_Name: com.unity.ads
         m_DisplayName: 
@@ -1401,7 +1401,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.8
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.ads@2.0.8
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.ads@2.0.8
         m_AssetPath: Packages/com.unity.ads
         m_Name: com.unity.ads
         m_DisplayName: 
@@ -1499,7 +1499,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.8
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.ads@2.0.8
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.ads@2.0.8
         m_AssetPath: Packages/com.unity.ads
         m_Name: com.unity.ads
         m_DisplayName: 
@@ -1597,7 +1597,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.8
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.ads@2.0.8
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.ads@2.0.8
         m_AssetPath: Packages/com.unity.ads
         m_Name: com.unity.ads
         m_DisplayName: 
@@ -1695,7 +1695,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.8
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.ads@2.0.8
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.ads@2.0.8
         m_AssetPath: Packages/com.unity.ads
         m_Name: com.unity.ads
         m_DisplayName: 
@@ -1793,7 +1793,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.8
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.ads@2.0.8
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.ads@2.0.8
         m_AssetPath: Packages/com.unity.ads
         m_Name: com.unity.ads
         m_DisplayName: 
@@ -1891,7 +1891,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.8
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.ads@2.0.8
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.ads@2.0.8
         m_AssetPath: Packages/com.unity.ads
         m_Name: com.unity.ads
         m_DisplayName: 
@@ -1989,7 +1989,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.8
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.ads@2.0.8
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.ads@2.0.8
         m_AssetPath: Packages/com.unity.ads
         m_Name: com.unity.ads
         m_DisplayName: 
@@ -2087,7 +2087,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.8
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.ads@2.0.8
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.ads@2.0.8
         m_AssetPath: Packages/com.unity.ads
         m_Name: com.unity.ads
         m_DisplayName: 
@@ -2185,7 +2185,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.8
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.ads@2.0.8
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.ads@2.0.8
         m_AssetPath: Packages/com.unity.ads
         m_Name: com.unity.ads
         m_DisplayName: 
@@ -2283,7 +2283,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.8
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.ads@2.0.8
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.ads@2.0.8
         m_AssetPath: Packages/com.unity.ads
         m_Name: com.unity.ads
         m_DisplayName: 
@@ -2381,7 +2381,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.8
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.ads@2.0.8
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.ads@2.0.8
         m_AssetPath: Packages/com.unity.ads
         m_Name: com.unity.ads
         m_DisplayName: 
@@ -2479,7 +2479,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.8
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.ads@2.0.8
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.ads@2.0.8
         m_AssetPath: Packages/com.unity.ads
         m_Name: com.unity.ads
         m_DisplayName: 
@@ -2577,7 +2577,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.8
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.ads@2.0.8
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.ads@2.0.8
         m_AssetPath: Packages/com.unity.ads
         m_Name: com.unity.ads
         m_DisplayName: 
@@ -2675,7 +2675,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.8
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.ads@2.0.8
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.ads@2.0.8
         m_AssetPath: Packages/com.unity.ads
         m_Name: com.unity.ads
         m_DisplayName: 
@@ -2773,7 +2773,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.8
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.ads@2.0.8
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.ads@2.0.8
         m_AssetPath: Packages/com.unity.ads
         m_Name: com.unity.ads
         m_DisplayName: 
@@ -2871,7 +2871,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.8
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.ads@2.0.8
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.ads@2.0.8
         m_AssetPath: Packages/com.unity.ads
         m_Name: com.unity.ads
         m_DisplayName: 
@@ -2969,7 +2969,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 3.3.2
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.analytics@3.3.2
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.analytics@3.3.2
         m_AssetPath: Packages/com.unity.analytics
         m_Name: com.unity.analytics
         m_DisplayName: Analytics Library
@@ -3081,7 +3081,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 3.3.2
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.analytics@3.3.2
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.analytics@3.3.2
         m_AssetPath: Packages/com.unity.analytics
         m_Name: com.unity.analytics
         m_DisplayName: Analytics Library
@@ -3193,7 +3193,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 3.3.2
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.analytics@3.3.2
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.analytics@3.3.2
         m_AssetPath: Packages/com.unity.analytics
         m_Name: com.unity.analytics
         m_DisplayName: Analytics Library
@@ -3305,7 +3305,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 3.3.2
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.analytics@3.3.2
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.analytics@3.3.2
         m_AssetPath: Packages/com.unity.analytics
         m_Name: com.unity.analytics
         m_DisplayName: Analytics Library
@@ -3417,7 +3417,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 3.3.2
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.analytics@3.3.2
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.analytics@3.3.2
         m_AssetPath: Packages/com.unity.analytics
         m_Name: com.unity.analytics
         m_DisplayName: Analytics Library
@@ -3529,7 +3529,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 3.3.2
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.analytics@3.3.2
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.analytics@3.3.2
         m_AssetPath: Packages/com.unity.analytics
         m_Name: com.unity.analytics
         m_DisplayName: Analytics Library
@@ -3641,7 +3641,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 3.3.2
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.analytics@3.3.2
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.analytics@3.3.2
         m_AssetPath: Packages/com.unity.analytics
         m_Name: com.unity.analytics
         m_DisplayName: Analytics Library
@@ -3753,7 +3753,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 3.3.2
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.analytics@3.3.2
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.analytics@3.3.2
         m_AssetPath: Packages/com.unity.analytics
         m_Name: com.unity.analytics
         m_DisplayName: Analytics Library
@@ -3865,7 +3865,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 3.3.2
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.analytics@3.3.2
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.analytics@3.3.2
         m_AssetPath: Packages/com.unity.analytics
         m_Name: com.unity.analytics
         m_DisplayName: Analytics Library
@@ -3977,7 +3977,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 3.3.2
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.analytics@3.3.2
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.analytics@3.3.2
         m_AssetPath: Packages/com.unity.analytics
         m_Name: com.unity.analytics
         m_DisplayName: Analytics Library
@@ -4089,7 +4089,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 3.3.2
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.analytics@3.3.2
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.analytics@3.3.2
         m_AssetPath: Packages/com.unity.analytics
         m_Name: com.unity.analytics
         m_DisplayName: Analytics Library
@@ -4201,7 +4201,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 3.3.2
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.analytics@3.3.2
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.analytics@3.3.2
         m_AssetPath: Packages/com.unity.analytics
         m_Name: com.unity.analytics
         m_DisplayName: Analytics Library
@@ -4313,7 +4313,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 3.3.2
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.analytics@3.3.2
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.analytics@3.3.2
         m_AssetPath: Packages/com.unity.analytics
         m_Name: com.unity.analytics
         m_DisplayName: Analytics Library
@@ -4425,7 +4425,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 3.3.2
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.analytics@3.3.2
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.analytics@3.3.2
         m_AssetPath: Packages/com.unity.analytics
         m_Name: com.unity.analytics
         m_DisplayName: Analytics Library
@@ -4537,7 +4537,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 3.3.2
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.analytics@3.3.2
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.analytics@3.3.2
         m_AssetPath: Packages/com.unity.analytics
         m_Name: com.unity.analytics
         m_DisplayName: Analytics Library
@@ -4649,7 +4649,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 3.3.2
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.analytics@3.3.2
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.analytics@3.3.2
         m_AssetPath: Packages/com.unity.analytics
         m_Name: com.unity.analytics
         m_DisplayName: Analytics Library
@@ -4761,7 +4761,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 3.3.2
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.analytics@3.3.2
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.analytics@3.3.2
         m_AssetPath: Packages/com.unity.analytics
         m_Name: com.unity.analytics
         m_DisplayName: Analytics Library
@@ -4873,7 +4873,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 3.3.2
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.analytics@3.3.2
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.analytics@3.3.2
         m_AssetPath: Packages/com.unity.analytics
         m_Name: com.unity.analytics
         m_DisplayName: Analytics Library
@@ -4985,7 +4985,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 3.3.2
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.analytics@3.3.2
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.analytics@3.3.2
         m_AssetPath: Packages/com.unity.analytics
         m_Name: com.unity.analytics
         m_DisplayName: Analytics Library
@@ -5097,7 +5097,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 3.3.2
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.analytics@3.3.2
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.analytics@3.3.2
         m_AssetPath: Packages/com.unity.analytics
         m_Name: com.unity.analytics
         m_DisplayName: Analytics Library
@@ -5209,7 +5209,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 3.3.2
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.analytics@3.3.2
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.analytics@3.3.2
         m_AssetPath: Packages/com.unity.analytics
         m_Name: com.unity.analytics
         m_DisplayName: Analytics Library
@@ -5321,7 +5321,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 3.3.2
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.analytics@3.3.2
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.analytics@3.3.2
         m_AssetPath: Packages/com.unity.analytics
         m_Name: com.unity.analytics
         m_DisplayName: Analytics Library
@@ -5433,7 +5433,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 3.3.2
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.analytics@3.3.2
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.analytics@3.3.2
         m_AssetPath: Packages/com.unity.analytics
         m_Name: com.unity.analytics
         m_DisplayName: Analytics Library
@@ -5545,7 +5545,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 3.3.2
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.analytics@3.3.2
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.analytics@3.3.2
         m_AssetPath: Packages/com.unity.analytics
         m_Name: com.unity.analytics
         m_DisplayName: Analytics Library
@@ -5657,7 +5657,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 3.3.2
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.analytics@3.3.2
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.analytics@3.3.2
         m_AssetPath: Packages/com.unity.analytics
         m_Name: com.unity.analytics
         m_DisplayName: Analytics Library
@@ -5769,7 +5769,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 3.3.2
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.analytics@3.3.2
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.analytics@3.3.2
         m_AssetPath: Packages/com.unity.analytics
         m_Name: com.unity.analytics
         m_DisplayName: Analytics Library
@@ -5881,7 +5881,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 3.3.2
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.analytics@3.3.2
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.analytics@3.3.2
         m_AssetPath: Packages/com.unity.analytics
         m_Name: com.unity.analytics
         m_DisplayName: Analytics Library
@@ -5993,7 +5993,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 3.3.2
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.analytics@3.3.2
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.analytics@3.3.2
         m_AssetPath: Packages/com.unity.analytics
         m_Name: com.unity.analytics
         m_DisplayName: Analytics Library
@@ -6105,7 +6105,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 3.3.2
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.analytics@3.3.2
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.analytics@3.3.2
         m_AssetPath: Packages/com.unity.analytics
         m_Name: com.unity.analytics
         m_DisplayName: Analytics Library
@@ -6219,7 +6219,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.3.4
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.cinemachine@2.3.4
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.cinemachine@2.3.4
         m_AssetPath: Packages/com.unity.cinemachine
         m_Name: com.unity.cinemachine
         m_DisplayName: Cinemachine
@@ -6313,7 +6313,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.3.4
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.cinemachine@2.3.4
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.cinemachine@2.3.4
         m_AssetPath: Packages/com.unity.cinemachine
         m_Name: com.unity.cinemachine
         m_DisplayName: Cinemachine
@@ -6407,7 +6407,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.3.4
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.cinemachine@2.3.4
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.cinemachine@2.3.4
         m_AssetPath: Packages/com.unity.cinemachine
         m_Name: com.unity.cinemachine
         m_DisplayName: Cinemachine
@@ -6501,7 +6501,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.3.4
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.cinemachine@2.3.4
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.cinemachine@2.3.4
         m_AssetPath: Packages/com.unity.cinemachine
         m_Name: com.unity.cinemachine
         m_DisplayName: Cinemachine
@@ -6595,7 +6595,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.3.4
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.cinemachine@2.3.4
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.cinemachine@2.3.4
         m_AssetPath: Packages/com.unity.cinemachine
         m_Name: com.unity.cinemachine
         m_DisplayName: Cinemachine
@@ -6689,7 +6689,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.3.4
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.cinemachine@2.3.4
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.cinemachine@2.3.4
         m_AssetPath: Packages/com.unity.cinemachine
         m_Name: com.unity.cinemachine
         m_DisplayName: Cinemachine
@@ -6783,7 +6783,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.3.4
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.cinemachine@2.3.4
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.cinemachine@2.3.4
         m_AssetPath: Packages/com.unity.cinemachine
         m_Name: com.unity.cinemachine
         m_DisplayName: Cinemachine
@@ -6877,7 +6877,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.3.4
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.cinemachine@2.3.4
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.cinemachine@2.3.4
         m_AssetPath: Packages/com.unity.cinemachine
         m_Name: com.unity.cinemachine
         m_DisplayName: Cinemachine
@@ -6971,7 +6971,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.3.4
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.cinemachine@2.3.4
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.cinemachine@2.3.4
         m_AssetPath: Packages/com.unity.cinemachine
         m_Name: com.unity.cinemachine
         m_DisplayName: Cinemachine
@@ -7063,7 +7063,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 1.2.16
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.collab-proxy@1.2.16
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.collab-proxy@1.2.16
         m_AssetPath: Packages/com.unity.collab-proxy
         m_Name: com.unity.collab-proxy
         m_DisplayName: Unity Collaborate
@@ -7134,7 +7134,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 1.2.16
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.collab-proxy@1.2.16
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.collab-proxy@1.2.16
         m_AssetPath: Packages/com.unity.collab-proxy
         m_Name: com.unity.collab-proxy
         m_DisplayName: Unity Collaborate
@@ -7205,7 +7205,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 1.2.16
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.collab-proxy@1.2.16
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.collab-proxy@1.2.16
         m_AssetPath: Packages/com.unity.collab-proxy
         m_Name: com.unity.collab-proxy
         m_DisplayName: Unity Collaborate
@@ -7276,7 +7276,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 1.2.16
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.collab-proxy@1.2.16
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.collab-proxy@1.2.16
         m_AssetPath: Packages/com.unity.collab-proxy
         m_Name: com.unity.collab-proxy
         m_DisplayName: Unity Collaborate
@@ -7347,7 +7347,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 1.2.16
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.collab-proxy@1.2.16
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.collab-proxy@1.2.16
         m_AssetPath: Packages/com.unity.collab-proxy
         m_Name: com.unity.collab-proxy
         m_DisplayName: Unity Collaborate
@@ -7491,7 +7491,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.6
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.purchasing@2.0.6
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.purchasing@2.0.6
         m_AssetPath: Packages/com.unity.purchasing
         m_Name: com.unity.purchasing
         m_DisplayName: In App Purchasing
@@ -7620,7 +7620,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.6
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.purchasing@2.0.6
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.purchasing@2.0.6
         m_AssetPath: Packages/com.unity.purchasing
         m_Name: com.unity.purchasing
         m_DisplayName: In App Purchasing
@@ -7749,7 +7749,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.6
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.purchasing@2.0.6
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.purchasing@2.0.6
         m_AssetPath: Packages/com.unity.purchasing
         m_Name: com.unity.purchasing
         m_DisplayName: In App Purchasing
@@ -7878,7 +7878,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.6
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.purchasing@2.0.6
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.purchasing@2.0.6
         m_AssetPath: Packages/com.unity.purchasing
         m_Name: com.unity.purchasing
         m_DisplayName: In App Purchasing
@@ -8007,7 +8007,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.6
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.purchasing@2.0.6
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.purchasing@2.0.6
         m_AssetPath: Packages/com.unity.purchasing
         m_Name: com.unity.purchasing
         m_DisplayName: In App Purchasing
@@ -8136,7 +8136,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.6
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.purchasing@2.0.6
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.purchasing@2.0.6
         m_AssetPath: Packages/com.unity.purchasing
         m_Name: com.unity.purchasing
         m_DisplayName: In App Purchasing
@@ -8265,7 +8265,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.6
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.purchasing@2.0.6
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.purchasing@2.0.6
         m_AssetPath: Packages/com.unity.purchasing
         m_Name: com.unity.purchasing
         m_DisplayName: In App Purchasing
@@ -8394,7 +8394,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.6
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.purchasing@2.0.6
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.purchasing@2.0.6
         m_AssetPath: Packages/com.unity.purchasing
         m_Name: com.unity.purchasing
         m_DisplayName: In App Purchasing
@@ -8523,7 +8523,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.6
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.purchasing@2.0.6
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.purchasing@2.0.6
         m_AssetPath: Packages/com.unity.purchasing
         m_Name: com.unity.purchasing
         m_DisplayName: In App Purchasing
@@ -8652,7 +8652,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.6
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.purchasing@2.0.6
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.purchasing@2.0.6
         m_AssetPath: Packages/com.unity.purchasing
         m_Name: com.unity.purchasing
         m_DisplayName: In App Purchasing
@@ -8781,7 +8781,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.6
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.purchasing@2.0.6
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.purchasing@2.0.6
         m_AssetPath: Packages/com.unity.purchasing
         m_Name: com.unity.purchasing
         m_DisplayName: In App Purchasing
@@ -8910,7 +8910,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.6
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.purchasing@2.0.6
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.purchasing@2.0.6
         m_AssetPath: Packages/com.unity.purchasing
         m_Name: com.unity.purchasing
         m_DisplayName: In App Purchasing
@@ -9039,7 +9039,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.6
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.purchasing@2.0.6
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.purchasing@2.0.6
         m_AssetPath: Packages/com.unity.purchasing
         m_Name: com.unity.purchasing
         m_DisplayName: In App Purchasing
@@ -9168,7 +9168,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.6
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.purchasing@2.0.6
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.purchasing@2.0.6
         m_AssetPath: Packages/com.unity.purchasing
         m_Name: com.unity.purchasing
         m_DisplayName: In App Purchasing
@@ -9297,7 +9297,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.6
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.purchasing@2.0.6
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.purchasing@2.0.6
         m_AssetPath: Packages/com.unity.purchasing
         m_Name: com.unity.purchasing
         m_DisplayName: In App Purchasing
@@ -9426,7 +9426,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.6
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.purchasing@2.0.6
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.purchasing@2.0.6
         m_AssetPath: Packages/com.unity.purchasing
         m_Name: com.unity.purchasing
         m_DisplayName: In App Purchasing
@@ -9555,7 +9555,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.6
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.purchasing@2.0.6
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.purchasing@2.0.6
         m_AssetPath: Packages/com.unity.purchasing
         m_Name: com.unity.purchasing
         m_DisplayName: In App Purchasing
@@ -9684,7 +9684,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.6
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.purchasing@2.0.6
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.purchasing@2.0.6
         m_AssetPath: Packages/com.unity.purchasing
         m_Name: com.unity.purchasing
         m_DisplayName: In App Purchasing
@@ -9813,7 +9813,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.6
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.purchasing@2.0.6
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.purchasing@2.0.6
         m_AssetPath: Packages/com.unity.purchasing
         m_Name: com.unity.purchasing
         m_DisplayName: In App Purchasing
@@ -9942,7 +9942,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.6
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.purchasing@2.0.6
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.purchasing@2.0.6
         m_AssetPath: Packages/com.unity.purchasing
         m_Name: com.unity.purchasing
         m_DisplayName: In App Purchasing
@@ -10071,7 +10071,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.6
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.purchasing@2.0.6
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.purchasing@2.0.6
         m_AssetPath: Packages/com.unity.purchasing
         m_Name: com.unity.purchasing
         m_DisplayName: In App Purchasing
@@ -10200,7 +10200,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.6
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.purchasing@2.0.6
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.purchasing@2.0.6
         m_AssetPath: Packages/com.unity.purchasing
         m_Name: com.unity.purchasing
         m_DisplayName: In App Purchasing
@@ -10329,7 +10329,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.0
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.textmeshpro@2.0.0
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.textmeshpro@2.0.0
         m_AssetPath: Packages/com.unity.textmeshpro
         m_Name: com.unity.textmeshpro
         m_DisplayName: TextMesh Pro
@@ -10463,7 +10463,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.0
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.textmeshpro@2.0.0
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.textmeshpro@2.0.0
         m_AssetPath: Packages/com.unity.textmeshpro
         m_Name: com.unity.textmeshpro
         m_DisplayName: TextMesh Pro
@@ -10597,7 +10597,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.0
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.textmeshpro@2.0.0
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.textmeshpro@2.0.0
         m_AssetPath: Packages/com.unity.textmeshpro
         m_Name: com.unity.textmeshpro
         m_DisplayName: TextMesh Pro
@@ -10731,7 +10731,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.0
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.textmeshpro@2.0.0
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.textmeshpro@2.0.0
         m_AssetPath: Packages/com.unity.textmeshpro
         m_Name: com.unity.textmeshpro
         m_DisplayName: TextMesh Pro
@@ -10865,7 +10865,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.0
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.textmeshpro@2.0.0
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.textmeshpro@2.0.0
         m_AssetPath: Packages/com.unity.textmeshpro
         m_Name: com.unity.textmeshpro
         m_DisplayName: TextMesh Pro
@@ -10999,7 +10999,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.0
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.textmeshpro@2.0.0
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.textmeshpro@2.0.0
         m_AssetPath: Packages/com.unity.textmeshpro
         m_Name: com.unity.textmeshpro
         m_DisplayName: TextMesh Pro
@@ -11133,7 +11133,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.0
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.textmeshpro@2.0.0
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.textmeshpro@2.0.0
         m_AssetPath: Packages/com.unity.textmeshpro
         m_Name: com.unity.textmeshpro
         m_DisplayName: TextMesh Pro
@@ -11267,7 +11267,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.0
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.textmeshpro@2.0.0
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.textmeshpro@2.0.0
         m_AssetPath: Packages/com.unity.textmeshpro
         m_Name: com.unity.textmeshpro
         m_DisplayName: TextMesh Pro
@@ -11401,7 +11401,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.0
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.textmeshpro@2.0.0
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.textmeshpro@2.0.0
         m_AssetPath: Packages/com.unity.textmeshpro
         m_Name: com.unity.textmeshpro
         m_DisplayName: TextMesh Pro
@@ -11535,7 +11535,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.0
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.textmeshpro@2.0.0
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.textmeshpro@2.0.0
         m_AssetPath: Packages/com.unity.textmeshpro
         m_Name: com.unity.textmeshpro
         m_DisplayName: TextMesh Pro
@@ -11669,7 +11669,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.0
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.textmeshpro@2.0.0
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.textmeshpro@2.0.0
         m_AssetPath: Packages/com.unity.textmeshpro
         m_Name: com.unity.textmeshpro
         m_DisplayName: TextMesh Pro
@@ -11803,7 +11803,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.0
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.textmeshpro@2.0.0
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.textmeshpro@2.0.0
         m_AssetPath: Packages/com.unity.textmeshpro
         m_Name: com.unity.textmeshpro
         m_DisplayName: TextMesh Pro
@@ -11937,7 +11937,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.0
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.textmeshpro@2.0.0
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.textmeshpro@2.0.0
         m_AssetPath: Packages/com.unity.textmeshpro
         m_Name: com.unity.textmeshpro
         m_DisplayName: TextMesh Pro
@@ -12071,7 +12071,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.0
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.textmeshpro@2.0.0
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.textmeshpro@2.0.0
         m_AssetPath: Packages/com.unity.textmeshpro
         m_Name: com.unity.textmeshpro
         m_DisplayName: TextMesh Pro
@@ -12205,7 +12205,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.0
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.textmeshpro@2.0.0
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.textmeshpro@2.0.0
         m_AssetPath: Packages/com.unity.textmeshpro
         m_Name: com.unity.textmeshpro
         m_DisplayName: TextMesh Pro
@@ -12339,7 +12339,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.0
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.textmeshpro@2.0.0
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.textmeshpro@2.0.0
         m_AssetPath: Packages/com.unity.textmeshpro
         m_Name: com.unity.textmeshpro
         m_DisplayName: TextMesh Pro
@@ -12473,7 +12473,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.0
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.textmeshpro@2.0.0
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.textmeshpro@2.0.0
         m_AssetPath: Packages/com.unity.textmeshpro
         m_Name: com.unity.textmeshpro
         m_DisplayName: TextMesh Pro
@@ -12607,7 +12607,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.0
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.textmeshpro@2.0.0
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.textmeshpro@2.0.0
         m_AssetPath: Packages/com.unity.textmeshpro
         m_Name: com.unity.textmeshpro
         m_DisplayName: TextMesh Pro
@@ -12741,7 +12741,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.0
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.textmeshpro@2.0.0
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.textmeshpro@2.0.0
         m_AssetPath: Packages/com.unity.textmeshpro
         m_Name: com.unity.textmeshpro
         m_DisplayName: TextMesh Pro
@@ -12875,7 +12875,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.0
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.textmeshpro@2.0.0
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.textmeshpro@2.0.0
         m_AssetPath: Packages/com.unity.textmeshpro
         m_Name: com.unity.textmeshpro
         m_DisplayName: TextMesh Pro
@@ -13009,7 +13009,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.0
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.textmeshpro@2.0.0
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.textmeshpro@2.0.0
         m_AssetPath: Packages/com.unity.textmeshpro
         m_Name: com.unity.textmeshpro
         m_DisplayName: TextMesh Pro
@@ -13143,7 +13143,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.0
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.textmeshpro@2.0.0
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.textmeshpro@2.0.0
         m_AssetPath: Packages/com.unity.textmeshpro
         m_Name: com.unity.textmeshpro
         m_DisplayName: TextMesh Pro
@@ -14942,7 +14942,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.8
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.ads@2.0.8
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.ads@2.0.8
         m_AssetPath: Packages/com.unity.ads
         m_Name: com.unity.ads
         m_DisplayName: 
@@ -15040,7 +15040,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.8
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.ads@2.0.8
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.ads@2.0.8
         m_AssetPath: Packages/com.unity.ads
         m_Name: com.unity.ads
         m_DisplayName: 
@@ -15138,7 +15138,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.8
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.ads@2.0.8
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.ads@2.0.8
         m_AssetPath: Packages/com.unity.ads
         m_Name: com.unity.ads
         m_DisplayName: 
@@ -15236,7 +15236,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.8
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.ads@2.0.8
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.ads@2.0.8
         m_AssetPath: Packages/com.unity.ads
         m_Name: com.unity.ads
         m_DisplayName: 
@@ -15334,7 +15334,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.8
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.ads@2.0.8
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.ads@2.0.8
         m_AssetPath: Packages/com.unity.ads
         m_Name: com.unity.ads
         m_DisplayName: 
@@ -15432,7 +15432,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.8
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.ads@2.0.8
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.ads@2.0.8
         m_AssetPath: Packages/com.unity.ads
         m_Name: com.unity.ads
         m_DisplayName: 
@@ -15530,7 +15530,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.8
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.ads@2.0.8
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.ads@2.0.8
         m_AssetPath: Packages/com.unity.ads
         m_Name: com.unity.ads
         m_DisplayName: 
@@ -15628,7 +15628,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.8
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.ads@2.0.8
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.ads@2.0.8
         m_AssetPath: Packages/com.unity.ads
         m_Name: com.unity.ads
         m_DisplayName: 
@@ -15726,7 +15726,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.8
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.ads@2.0.8
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.ads@2.0.8
         m_AssetPath: Packages/com.unity.ads
         m_Name: com.unity.ads
         m_DisplayName: 
@@ -15824,7 +15824,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.8
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.ads@2.0.8
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.ads@2.0.8
         m_AssetPath: Packages/com.unity.ads
         m_Name: com.unity.ads
         m_DisplayName: 
@@ -15922,7 +15922,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.8
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.ads@2.0.8
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.ads@2.0.8
         m_AssetPath: Packages/com.unity.ads
         m_Name: com.unity.ads
         m_DisplayName: 
@@ -16020,7 +16020,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.8
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.ads@2.0.8
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.ads@2.0.8
         m_AssetPath: Packages/com.unity.ads
         m_Name: com.unity.ads
         m_DisplayName: 
@@ -16118,7 +16118,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.8
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.ads@2.0.8
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.ads@2.0.8
         m_AssetPath: Packages/com.unity.ads
         m_Name: com.unity.ads
         m_DisplayName: 
@@ -16216,7 +16216,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.8
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.ads@2.0.8
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.ads@2.0.8
         m_AssetPath: Packages/com.unity.ads
         m_Name: com.unity.ads
         m_DisplayName: 
@@ -16314,7 +16314,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.8
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.ads@2.0.8
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.ads@2.0.8
         m_AssetPath: Packages/com.unity.ads
         m_Name: com.unity.ads
         m_DisplayName: 
@@ -16412,7 +16412,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.8
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.ads@2.0.8
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.ads@2.0.8
         m_AssetPath: Packages/com.unity.ads
         m_Name: com.unity.ads
         m_DisplayName: 
@@ -16510,7 +16510,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.8
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.ads@2.0.8
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.ads@2.0.8
         m_AssetPath: Packages/com.unity.ads
         m_Name: com.unity.ads
         m_DisplayName: 
@@ -16608,7 +16608,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.8
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.ads@2.0.8
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.ads@2.0.8
         m_AssetPath: Packages/com.unity.ads
         m_Name: com.unity.ads
         m_DisplayName: 
@@ -16706,7 +16706,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.8
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.ads@2.0.8
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.ads@2.0.8
         m_AssetPath: Packages/com.unity.ads
         m_Name: com.unity.ads
         m_DisplayName: 
@@ -16804,7 +16804,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.8
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.ads@2.0.8
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.ads@2.0.8
         m_AssetPath: Packages/com.unity.ads
         m_Name: com.unity.ads
         m_DisplayName: 
@@ -16902,7 +16902,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.8
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.ads@2.0.8
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.ads@2.0.8
         m_AssetPath: Packages/com.unity.ads
         m_Name: com.unity.ads
         m_DisplayName: 
@@ -17000,7 +17000,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.8
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.ads@2.0.8
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.ads@2.0.8
         m_AssetPath: Packages/com.unity.ads
         m_Name: com.unity.ads
         m_DisplayName: 
@@ -17098,7 +17098,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.8
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.ads@2.0.8
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.ads@2.0.8
         m_AssetPath: Packages/com.unity.ads
         m_Name: com.unity.ads
         m_DisplayName: 
@@ -17196,7 +17196,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.8
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.ads@2.0.8
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.ads@2.0.8
         m_AssetPath: Packages/com.unity.ads
         m_Name: com.unity.ads
         m_DisplayName: 
@@ -17294,7 +17294,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 3.3.2
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.analytics@3.3.2
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.analytics@3.3.2
         m_AssetPath: Packages/com.unity.analytics
         m_Name: com.unity.analytics
         m_DisplayName: Analytics Library
@@ -17406,7 +17406,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 3.3.2
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.analytics@3.3.2
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.analytics@3.3.2
         m_AssetPath: Packages/com.unity.analytics
         m_Name: com.unity.analytics
         m_DisplayName: Analytics Library
@@ -17518,7 +17518,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 3.3.2
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.analytics@3.3.2
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.analytics@3.3.2
         m_AssetPath: Packages/com.unity.analytics
         m_Name: com.unity.analytics
         m_DisplayName: Analytics Library
@@ -17630,7 +17630,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 3.3.2
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.analytics@3.3.2
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.analytics@3.3.2
         m_AssetPath: Packages/com.unity.analytics
         m_Name: com.unity.analytics
         m_DisplayName: Analytics Library
@@ -17742,7 +17742,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 3.3.2
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.analytics@3.3.2
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.analytics@3.3.2
         m_AssetPath: Packages/com.unity.analytics
         m_Name: com.unity.analytics
         m_DisplayName: Analytics Library
@@ -17854,7 +17854,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 3.3.2
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.analytics@3.3.2
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.analytics@3.3.2
         m_AssetPath: Packages/com.unity.analytics
         m_Name: com.unity.analytics
         m_DisplayName: Analytics Library
@@ -17966,7 +17966,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 3.3.2
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.analytics@3.3.2
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.analytics@3.3.2
         m_AssetPath: Packages/com.unity.analytics
         m_Name: com.unity.analytics
         m_DisplayName: Analytics Library
@@ -18078,7 +18078,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 3.3.2
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.analytics@3.3.2
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.analytics@3.3.2
         m_AssetPath: Packages/com.unity.analytics
         m_Name: com.unity.analytics
         m_DisplayName: Analytics Library
@@ -18190,7 +18190,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 3.3.2
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.analytics@3.3.2
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.analytics@3.3.2
         m_AssetPath: Packages/com.unity.analytics
         m_Name: com.unity.analytics
         m_DisplayName: Analytics Library
@@ -18302,7 +18302,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 3.3.2
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.analytics@3.3.2
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.analytics@3.3.2
         m_AssetPath: Packages/com.unity.analytics
         m_Name: com.unity.analytics
         m_DisplayName: Analytics Library
@@ -18414,7 +18414,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 3.3.2
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.analytics@3.3.2
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.analytics@3.3.2
         m_AssetPath: Packages/com.unity.analytics
         m_Name: com.unity.analytics
         m_DisplayName: Analytics Library
@@ -18526,7 +18526,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 3.3.2
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.analytics@3.3.2
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.analytics@3.3.2
         m_AssetPath: Packages/com.unity.analytics
         m_Name: com.unity.analytics
         m_DisplayName: Analytics Library
@@ -18638,7 +18638,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 3.3.2
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.analytics@3.3.2
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.analytics@3.3.2
         m_AssetPath: Packages/com.unity.analytics
         m_Name: com.unity.analytics
         m_DisplayName: Analytics Library
@@ -18750,7 +18750,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 3.3.2
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.analytics@3.3.2
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.analytics@3.3.2
         m_AssetPath: Packages/com.unity.analytics
         m_Name: com.unity.analytics
         m_DisplayName: Analytics Library
@@ -18862,7 +18862,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 3.3.2
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.analytics@3.3.2
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.analytics@3.3.2
         m_AssetPath: Packages/com.unity.analytics
         m_Name: com.unity.analytics
         m_DisplayName: Analytics Library
@@ -18974,7 +18974,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 3.3.2
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.analytics@3.3.2
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.analytics@3.3.2
         m_AssetPath: Packages/com.unity.analytics
         m_Name: com.unity.analytics
         m_DisplayName: Analytics Library
@@ -19086,7 +19086,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 3.3.2
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.analytics@3.3.2
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.analytics@3.3.2
         m_AssetPath: Packages/com.unity.analytics
         m_Name: com.unity.analytics
         m_DisplayName: Analytics Library
@@ -19198,7 +19198,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 3.3.2
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.analytics@3.3.2
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.analytics@3.3.2
         m_AssetPath: Packages/com.unity.analytics
         m_Name: com.unity.analytics
         m_DisplayName: Analytics Library
@@ -19310,7 +19310,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 3.3.2
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.analytics@3.3.2
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.analytics@3.3.2
         m_AssetPath: Packages/com.unity.analytics
         m_Name: com.unity.analytics
         m_DisplayName: Analytics Library
@@ -19422,7 +19422,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 3.3.2
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.analytics@3.3.2
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.analytics@3.3.2
         m_AssetPath: Packages/com.unity.analytics
         m_Name: com.unity.analytics
         m_DisplayName: Analytics Library
@@ -19534,7 +19534,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 3.3.2
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.analytics@3.3.2
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.analytics@3.3.2
         m_AssetPath: Packages/com.unity.analytics
         m_Name: com.unity.analytics
         m_DisplayName: Analytics Library
@@ -19646,7 +19646,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 3.3.2
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.analytics@3.3.2
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.analytics@3.3.2
         m_AssetPath: Packages/com.unity.analytics
         m_Name: com.unity.analytics
         m_DisplayName: Analytics Library
@@ -19758,7 +19758,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 3.3.2
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.analytics@3.3.2
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.analytics@3.3.2
         m_AssetPath: Packages/com.unity.analytics
         m_Name: com.unity.analytics
         m_DisplayName: Analytics Library
@@ -19870,7 +19870,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 3.3.2
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.analytics@3.3.2
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.analytics@3.3.2
         m_AssetPath: Packages/com.unity.analytics
         m_Name: com.unity.analytics
         m_DisplayName: Analytics Library
@@ -19982,7 +19982,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 3.3.2
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.analytics@3.3.2
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.analytics@3.3.2
         m_AssetPath: Packages/com.unity.analytics
         m_Name: com.unity.analytics
         m_DisplayName: Analytics Library
@@ -20094,7 +20094,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 3.3.2
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.analytics@3.3.2
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.analytics@3.3.2
         m_AssetPath: Packages/com.unity.analytics
         m_Name: com.unity.analytics
         m_DisplayName: Analytics Library
@@ -20206,7 +20206,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 3.3.2
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.analytics@3.3.2
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.analytics@3.3.2
         m_AssetPath: Packages/com.unity.analytics
         m_Name: com.unity.analytics
         m_DisplayName: Analytics Library
@@ -20318,7 +20318,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 3.3.2
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.analytics@3.3.2
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.analytics@3.3.2
         m_AssetPath: Packages/com.unity.analytics
         m_Name: com.unity.analytics
         m_DisplayName: Analytics Library
@@ -20430,7 +20430,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 3.3.2
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.analytics@3.3.2
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.analytics@3.3.2
         m_AssetPath: Packages/com.unity.analytics
         m_Name: com.unity.analytics
         m_DisplayName: Analytics Library
@@ -20544,7 +20544,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.3.4
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.cinemachine@2.3.4
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.cinemachine@2.3.4
         m_AssetPath: Packages/com.unity.cinemachine
         m_Name: com.unity.cinemachine
         m_DisplayName: Cinemachine
@@ -20638,7 +20638,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.3.4
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.cinemachine@2.3.4
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.cinemachine@2.3.4
         m_AssetPath: Packages/com.unity.cinemachine
         m_Name: com.unity.cinemachine
         m_DisplayName: Cinemachine
@@ -20732,7 +20732,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.3.4
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.cinemachine@2.3.4
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.cinemachine@2.3.4
         m_AssetPath: Packages/com.unity.cinemachine
         m_Name: com.unity.cinemachine
         m_DisplayName: Cinemachine
@@ -20826,7 +20826,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.3.4
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.cinemachine@2.3.4
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.cinemachine@2.3.4
         m_AssetPath: Packages/com.unity.cinemachine
         m_Name: com.unity.cinemachine
         m_DisplayName: Cinemachine
@@ -20920,7 +20920,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.3.4
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.cinemachine@2.3.4
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.cinemachine@2.3.4
         m_AssetPath: Packages/com.unity.cinemachine
         m_Name: com.unity.cinemachine
         m_DisplayName: Cinemachine
@@ -21014,7 +21014,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.3.4
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.cinemachine@2.3.4
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.cinemachine@2.3.4
         m_AssetPath: Packages/com.unity.cinemachine
         m_Name: com.unity.cinemachine
         m_DisplayName: Cinemachine
@@ -21108,7 +21108,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.3.4
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.cinemachine@2.3.4
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.cinemachine@2.3.4
         m_AssetPath: Packages/com.unity.cinemachine
         m_Name: com.unity.cinemachine
         m_DisplayName: Cinemachine
@@ -21202,7 +21202,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.3.4
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.cinemachine@2.3.4
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.cinemachine@2.3.4
         m_AssetPath: Packages/com.unity.cinemachine
         m_Name: com.unity.cinemachine
         m_DisplayName: Cinemachine
@@ -21296,7 +21296,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.3.4
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.cinemachine@2.3.4
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.cinemachine@2.3.4
         m_AssetPath: Packages/com.unity.cinemachine
         m_Name: com.unity.cinemachine
         m_DisplayName: Cinemachine
@@ -21388,7 +21388,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 1.2.16
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.collab-proxy@1.2.16
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.collab-proxy@1.2.16
         m_AssetPath: Packages/com.unity.collab-proxy
         m_Name: com.unity.collab-proxy
         m_DisplayName: Unity Collaborate
@@ -21459,7 +21459,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 1.2.16
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.collab-proxy@1.2.16
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.collab-proxy@1.2.16
         m_AssetPath: Packages/com.unity.collab-proxy
         m_Name: com.unity.collab-proxy
         m_DisplayName: Unity Collaborate
@@ -21530,7 +21530,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 1.2.16
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.collab-proxy@1.2.16
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.collab-proxy@1.2.16
         m_AssetPath: Packages/com.unity.collab-proxy
         m_Name: com.unity.collab-proxy
         m_DisplayName: Unity Collaborate
@@ -21601,7 +21601,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 1.2.16
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.collab-proxy@1.2.16
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.collab-proxy@1.2.16
         m_AssetPath: Packages/com.unity.collab-proxy
         m_Name: com.unity.collab-proxy
         m_DisplayName: Unity Collaborate
@@ -21672,7 +21672,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 1.2.16
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.collab-proxy@1.2.16
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.collab-proxy@1.2.16
         m_AssetPath: Packages/com.unity.collab-proxy
         m_Name: com.unity.collab-proxy
         m_DisplayName: Unity Collaborate
@@ -21816,7 +21816,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.6
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.purchasing@2.0.6
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.purchasing@2.0.6
         m_AssetPath: Packages/com.unity.purchasing
         m_Name: com.unity.purchasing
         m_DisplayName: In App Purchasing
@@ -21945,7 +21945,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.6
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.purchasing@2.0.6
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.purchasing@2.0.6
         m_AssetPath: Packages/com.unity.purchasing
         m_Name: com.unity.purchasing
         m_DisplayName: In App Purchasing
@@ -22074,7 +22074,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.6
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.purchasing@2.0.6
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.purchasing@2.0.6
         m_AssetPath: Packages/com.unity.purchasing
         m_Name: com.unity.purchasing
         m_DisplayName: In App Purchasing
@@ -22203,7 +22203,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.6
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.purchasing@2.0.6
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.purchasing@2.0.6
         m_AssetPath: Packages/com.unity.purchasing
         m_Name: com.unity.purchasing
         m_DisplayName: In App Purchasing
@@ -22332,7 +22332,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.6
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.purchasing@2.0.6
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.purchasing@2.0.6
         m_AssetPath: Packages/com.unity.purchasing
         m_Name: com.unity.purchasing
         m_DisplayName: In App Purchasing
@@ -22461,7 +22461,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.6
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.purchasing@2.0.6
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.purchasing@2.0.6
         m_AssetPath: Packages/com.unity.purchasing
         m_Name: com.unity.purchasing
         m_DisplayName: In App Purchasing
@@ -22590,7 +22590,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.6
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.purchasing@2.0.6
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.purchasing@2.0.6
         m_AssetPath: Packages/com.unity.purchasing
         m_Name: com.unity.purchasing
         m_DisplayName: In App Purchasing
@@ -22719,7 +22719,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.6
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.purchasing@2.0.6
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.purchasing@2.0.6
         m_AssetPath: Packages/com.unity.purchasing
         m_Name: com.unity.purchasing
         m_DisplayName: In App Purchasing
@@ -22848,7 +22848,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.6
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.purchasing@2.0.6
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.purchasing@2.0.6
         m_AssetPath: Packages/com.unity.purchasing
         m_Name: com.unity.purchasing
         m_DisplayName: In App Purchasing
@@ -22977,7 +22977,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.6
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.purchasing@2.0.6
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.purchasing@2.0.6
         m_AssetPath: Packages/com.unity.purchasing
         m_Name: com.unity.purchasing
         m_DisplayName: In App Purchasing
@@ -23106,7 +23106,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.6
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.purchasing@2.0.6
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.purchasing@2.0.6
         m_AssetPath: Packages/com.unity.purchasing
         m_Name: com.unity.purchasing
         m_DisplayName: In App Purchasing
@@ -23235,7 +23235,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.6
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.purchasing@2.0.6
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.purchasing@2.0.6
         m_AssetPath: Packages/com.unity.purchasing
         m_Name: com.unity.purchasing
         m_DisplayName: In App Purchasing
@@ -23364,7 +23364,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.6
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.purchasing@2.0.6
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.purchasing@2.0.6
         m_AssetPath: Packages/com.unity.purchasing
         m_Name: com.unity.purchasing
         m_DisplayName: In App Purchasing
@@ -23493,7 +23493,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.6
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.purchasing@2.0.6
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.purchasing@2.0.6
         m_AssetPath: Packages/com.unity.purchasing
         m_Name: com.unity.purchasing
         m_DisplayName: In App Purchasing
@@ -23622,7 +23622,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.6
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.purchasing@2.0.6
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.purchasing@2.0.6
         m_AssetPath: Packages/com.unity.purchasing
         m_Name: com.unity.purchasing
         m_DisplayName: In App Purchasing
@@ -23751,7 +23751,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.6
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.purchasing@2.0.6
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.purchasing@2.0.6
         m_AssetPath: Packages/com.unity.purchasing
         m_Name: com.unity.purchasing
         m_DisplayName: In App Purchasing
@@ -23880,7 +23880,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.6
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.purchasing@2.0.6
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.purchasing@2.0.6
         m_AssetPath: Packages/com.unity.purchasing
         m_Name: com.unity.purchasing
         m_DisplayName: In App Purchasing
@@ -24009,7 +24009,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.6
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.purchasing@2.0.6
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.purchasing@2.0.6
         m_AssetPath: Packages/com.unity.purchasing
         m_Name: com.unity.purchasing
         m_DisplayName: In App Purchasing
@@ -24138,7 +24138,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.6
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.purchasing@2.0.6
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.purchasing@2.0.6
         m_AssetPath: Packages/com.unity.purchasing
         m_Name: com.unity.purchasing
         m_DisplayName: In App Purchasing
@@ -24267,7 +24267,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.6
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.purchasing@2.0.6
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.purchasing@2.0.6
         m_AssetPath: Packages/com.unity.purchasing
         m_Name: com.unity.purchasing
         m_DisplayName: In App Purchasing
@@ -24396,7 +24396,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.6
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.purchasing@2.0.6
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.purchasing@2.0.6
         m_AssetPath: Packages/com.unity.purchasing
         m_Name: com.unity.purchasing
         m_DisplayName: In App Purchasing
@@ -24525,7 +24525,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.6
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.purchasing@2.0.6
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.purchasing@2.0.6
         m_AssetPath: Packages/com.unity.purchasing
         m_Name: com.unity.purchasing
         m_DisplayName: In App Purchasing
@@ -24654,7 +24654,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.0
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.textmeshpro@2.0.0
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.textmeshpro@2.0.0
         m_AssetPath: Packages/com.unity.textmeshpro
         m_Name: com.unity.textmeshpro
         m_DisplayName: TextMesh Pro
@@ -24788,7 +24788,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.0
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.textmeshpro@2.0.0
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.textmeshpro@2.0.0
         m_AssetPath: Packages/com.unity.textmeshpro
         m_Name: com.unity.textmeshpro
         m_DisplayName: TextMesh Pro
@@ -24922,7 +24922,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.0
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.textmeshpro@2.0.0
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.textmeshpro@2.0.0
         m_AssetPath: Packages/com.unity.textmeshpro
         m_Name: com.unity.textmeshpro
         m_DisplayName: TextMesh Pro
@@ -25056,7 +25056,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.0
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.textmeshpro@2.0.0
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.textmeshpro@2.0.0
         m_AssetPath: Packages/com.unity.textmeshpro
         m_Name: com.unity.textmeshpro
         m_DisplayName: TextMesh Pro
@@ -25190,7 +25190,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.0
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.textmeshpro@2.0.0
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.textmeshpro@2.0.0
         m_AssetPath: Packages/com.unity.textmeshpro
         m_Name: com.unity.textmeshpro
         m_DisplayName: TextMesh Pro
@@ -25324,7 +25324,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.0
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.textmeshpro@2.0.0
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.textmeshpro@2.0.0
         m_AssetPath: Packages/com.unity.textmeshpro
         m_Name: com.unity.textmeshpro
         m_DisplayName: TextMesh Pro
@@ -25458,7 +25458,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.0
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.textmeshpro@2.0.0
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.textmeshpro@2.0.0
         m_AssetPath: Packages/com.unity.textmeshpro
         m_Name: com.unity.textmeshpro
         m_DisplayName: TextMesh Pro
@@ -25592,7 +25592,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.0
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.textmeshpro@2.0.0
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.textmeshpro@2.0.0
         m_AssetPath: Packages/com.unity.textmeshpro
         m_Name: com.unity.textmeshpro
         m_DisplayName: TextMesh Pro
@@ -25726,7 +25726,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.0
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.textmeshpro@2.0.0
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.textmeshpro@2.0.0
         m_AssetPath: Packages/com.unity.textmeshpro
         m_Name: com.unity.textmeshpro
         m_DisplayName: TextMesh Pro
@@ -25860,7 +25860,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.0
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.textmeshpro@2.0.0
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.textmeshpro@2.0.0
         m_AssetPath: Packages/com.unity.textmeshpro
         m_Name: com.unity.textmeshpro
         m_DisplayName: TextMesh Pro
@@ -25994,7 +25994,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.0
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.textmeshpro@2.0.0
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.textmeshpro@2.0.0
         m_AssetPath: Packages/com.unity.textmeshpro
         m_Name: com.unity.textmeshpro
         m_DisplayName: TextMesh Pro
@@ -26128,7 +26128,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.0
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.textmeshpro@2.0.0
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.textmeshpro@2.0.0
         m_AssetPath: Packages/com.unity.textmeshpro
         m_Name: com.unity.textmeshpro
         m_DisplayName: TextMesh Pro
@@ -26262,7 +26262,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.0
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.textmeshpro@2.0.0
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.textmeshpro@2.0.0
         m_AssetPath: Packages/com.unity.textmeshpro
         m_Name: com.unity.textmeshpro
         m_DisplayName: TextMesh Pro
@@ -26396,7 +26396,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.0
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.textmeshpro@2.0.0
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.textmeshpro@2.0.0
         m_AssetPath: Packages/com.unity.textmeshpro
         m_Name: com.unity.textmeshpro
         m_DisplayName: TextMesh Pro
@@ -26530,7 +26530,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.0
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.textmeshpro@2.0.0
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.textmeshpro@2.0.0
         m_AssetPath: Packages/com.unity.textmeshpro
         m_Name: com.unity.textmeshpro
         m_DisplayName: TextMesh Pro
@@ -26664,7 +26664,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.0
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.textmeshpro@2.0.0
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.textmeshpro@2.0.0
         m_AssetPath: Packages/com.unity.textmeshpro
         m_Name: com.unity.textmeshpro
         m_DisplayName: TextMesh Pro
@@ -26798,7 +26798,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.0
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.textmeshpro@2.0.0
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.textmeshpro@2.0.0
         m_AssetPath: Packages/com.unity.textmeshpro
         m_Name: com.unity.textmeshpro
         m_DisplayName: TextMesh Pro
@@ -26932,7 +26932,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.0
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.textmeshpro@2.0.0
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.textmeshpro@2.0.0
         m_AssetPath: Packages/com.unity.textmeshpro
         m_Name: com.unity.textmeshpro
         m_DisplayName: TextMesh Pro
@@ -27066,7 +27066,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.0
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.textmeshpro@2.0.0
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.textmeshpro@2.0.0
         m_AssetPath: Packages/com.unity.textmeshpro
         m_Name: com.unity.textmeshpro
         m_DisplayName: TextMesh Pro
@@ -27200,7 +27200,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.0
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.textmeshpro@2.0.0
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.textmeshpro@2.0.0
         m_AssetPath: Packages/com.unity.textmeshpro
         m_Name: com.unity.textmeshpro
         m_DisplayName: TextMesh Pro
@@ -27334,7 +27334,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.0
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.textmeshpro@2.0.0
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.textmeshpro@2.0.0
         m_AssetPath: Packages/com.unity.textmeshpro
         m_Name: com.unity.textmeshpro
         m_DisplayName: TextMesh Pro
@@ -27468,7 +27468,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.0
         m_Source: 1
-        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGames\Library\PackageCache\com.unity.textmeshpro@2.0.0
+        m_ResolvedPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames\Library\PackageCache\com.unity.textmeshpro@2.0.0
         m_AssetPath: Packages/com.unity.textmeshpro
         m_Name: com.unity.textmeshpro
         m_DisplayName: TextMesh Pro
@@ -85825,8 +85825,8 @@ MonoBehaviour:
           m_Name: 
           m_Url: https://packages.unity.com
           m_IsDefault: 1
-    listPackagesVersion: 37
-    listPackagesOfflineVersion: 36
+    listPackagesVersion: 39
+    listPackagesOfflineVersion: 38
     searchOperationOngoing: 1
     listOperationOngoing: 0
     listOperationOfflineOngoing: 0
@@ -86272,19 +86272,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/Scripts/Player
   m_ViewMode: 0
   m_StartGridSize: 16
   m_LastFolders: []
   m_LastFoldersGridSize: 16
-  m_LastProjectPath: D:\Projects\UnityEngineProjects\KobGames
+  m_LastProjectPath: D:\Projects\UnityEngineProjects\KobGamesRepo\KobGames
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 351}
     m_SelectedIDs: 104c0000
     m_LastClickedID: 19472
-    m_ExpandedIDs: 
+    m_ExpandedIDs: 000000000c2b00002a2b00008c2b0000e02b0000cc2c0000e62d0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -86312,7 +86312,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: ffffffff0000000042370000183e00001e3e0000243e00002a3e0000303e0000
+    m_ExpandedIDs: ffffffff000000000c2b00002a2b00008c2b0000e02b0000cc2c0000e62d0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -86396,9 +86396,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 08a8ffff
-      m_LastClickedID: -22520
-      m_ExpandedIDs: 2446ffff645affffb86dffff1eabffff7ab6ffff90bbffff22bfffff68d2ffffd4d8ffff6aebffff
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: 8efbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
