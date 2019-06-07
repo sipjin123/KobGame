@@ -4,15 +4,11 @@ using UnityEngine;
 
 public class PlatformController : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField]
+    private PlatformModel _PlatformModel;
+    public PlatformModel PlatformModel { get { return _PlatformModel; } }
+    [SerializeField]
+    private PlatformView _PlatformView;
+    public PlatformView PlatformView { get { return _PlatformView; } }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

@@ -15,12 +15,48 @@ public class PlayerModel : MonoBehaviour,IModel
         return _CharData;
     }
 
-    public void UpdateState(CharacterStates _State)
+    [SerializeField]
+    private Transform _CurrentNode;
+    public Transform CurrentNode { get { return _CurrentNode; } }
+
+    [SerializeField]
+    private List<Transform> _NodePaths;
+    public void InjectNodes ( List<Transform> nodes)
     {
-        switch (_State)
+        _NodePaths = nodes;
+        _CurrentNode = _NodePaths[0];
+    }
+
+    public Transform GetNextNode()
+    {
+
+        if (_NodePaths.Count > 0)
+        {
+            _NodePaths.RemoveAt(0);
+            _CurrentNode = _NodePaths.Count > 0 ? _NodePaths[0] : null;
+        }
+        else
+            return null;
+        return _CurrentNode;
+    }
+
+    public CharStateEvent CharStateEvent = new CharStateEvent();
+
+    public void UpdateState(CharacterStates state)
+    {
+        _CharacterStates = state;
+        CharStateEvent.Invoke(state);
+    }
+
+    public float GetSpeed()
+    {
+        return _CharData.Speed;
+        switch(_CharacterStates)
         {
             case CharacterStates.Running:
-                break;
+                return _CharData.Speed;
+            default:
+                return 0;
         }
     }
 }

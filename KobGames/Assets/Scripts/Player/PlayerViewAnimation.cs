@@ -9,7 +9,7 @@ public class PlayerViewAnimation : MonoBehaviour, IViewAnimation
 
     public Animator GetAnimator()
     {
-        throw new System.NotImplementedException();
+        return _Animator;
     }
 
 }

@@ -8,13 +8,36 @@ public class GameHandler : MonoBehaviour
     private GameStateEventObj _GameStateObj;
 
     [SerializeField]
-    private PlatformController _FirstPlatform; 
+    private PlatformController _FirstPlatform;
+
+    [SerializeField]
+    private List<PlayerController> _Players;
+
+    [SerializeField]
+    private PlatformManager _PlatformManager;
+
+    private void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.Alpha1))
+        {
+            StartGame();
+        }
+    }
+
     private void OnGUI()
     {
-        if(GUILayout.Button("PLay"))
+        if(GUILayout.Button( "PLay", GUILayout.Height(100),GUILayout.Width(100)))
         {
-            _GameStateObj.ChangeState.Invoke(GameStates.Start);
+            StartGame();
         }
+    }
+
+    public void StartGame()
+    {
+        _Players[0].PlayerModel.InjectNodes(_PlatformManager.GetPathList(1));
+        _Players[1].PlayerModel.InjectNodes(_PlatformManager.GetPathList(2));
+        _Players[2].PlayerModel.InjectNodes(_PlatformManager.GetPathList(3));
+        _GameStateObj.ChangeState.Invoke(GameStates.Start);
     }
 
 }

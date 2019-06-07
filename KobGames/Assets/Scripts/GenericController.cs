@@ -14,5 +14,5 @@ public class GenericController : MonoBehaviour
 
     [SerializeField]
     protected PlayerModel _PlayerModel;
-
+    public PlayerModel PlayerModel { get { return _PlayerModel; } }
 }

@@ -14,8 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _MovableTransform: {fileID: 0}
   _CharController: {fileID: 0}
+  _TargetReachedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
   _RunFlag: 0
   _IsDeadFlag: 0
+  _TargetNode: {x: 0, y: 0, z: 0}
   _Speed: 0
 --- !u!1 &5726483209470237499
 GameObject:
@@ -62,6 +68,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _CharacterStates: 0
   _CharData: {fileID: 11400000, guid: 3f40a09942b669346897dabfce88b58b, type: 2}
+  _CurrentNode: {fileID: 0}
+  _NodePaths: []
 --- !u!1 &5726483210060046985
 GameObject:
   m_ObjectHideFlags: 0
@@ -139,9 +147,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _MovableTransform: {fileID: 5726483210778391647}
-  _CharController: {fileID: 5726483210778391648}
+  _CharController: {fileID: 0}
+  _TargetReachedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
   _RunFlag: 0
   _IsDeadFlag: 0
+  _TargetNode: {x: 0, y: 0, z: 0}
   _Speed: 0
 --- !u!1 &5726483210778391646
 GameObject:
@@ -152,9 +166,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5726483210778391647}
-  - component: {fileID: 5726483210778391648}
   - component: {fileID: 5726483210778391649}
   - component: {fileID: 5726483210778391651}
+  - component: {fileID: 6470053249474333405}
   m_Layer: 0
   m_Name: PlayerController
   m_TagString: Untagged
@@ -178,24 +192,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!143 &5726483210778391648
-CharacterController:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5726483210778391646}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Height: 2
-  m_Radius: 0.25
-  m_SlopeLimit: 45
-  m_StepOffset: 0.3
-  m_SkinWidth: 0.08
-  m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 1, z: 0}
 --- !u!54 &5726483210778391649
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -228,6 +224,20 @@ MonoBehaviour:
   _PlayerViewAnim: {fileID: 5726483211332139816}
   _PlayerModel: {fileID: 5726483209470237501}
   _GameStateObj: {fileID: 11400000, guid: a173b15a331ef0b4b9f287e1d16d3696, type: 2}
+--- !u!136 &6470053249474333405
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5726483210778391646}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.25
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0, y: 1, z: 0}
 --- !u!1 &5726483211332139814
 GameObject:
   m_ObjectHideFlags: 0
