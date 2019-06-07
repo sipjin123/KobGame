@@ -18,3 +18,9 @@ public enum CharacterStates
     Died,
     Idle
 }
+public enum ObstacleType
+{
+    Spinner,
+    Hammer,
+    Sharks
+}

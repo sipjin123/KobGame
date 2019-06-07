@@ -5,8 +5,10 @@ using UnityEngine;
 public class GameHandler : MonoBehaviour
 {
     [SerializeField]
-    GameStateEventObj _GameStateObj;
+    private GameStateEventObj _GameStateObj;
 
+    [SerializeField]
+    private PlatformController _FirstPlatform; 
     private void OnGUI()
     {
         if(GUILayout.Button("PLay"))
