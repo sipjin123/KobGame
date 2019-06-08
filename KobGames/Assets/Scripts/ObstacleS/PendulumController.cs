@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PendulumController : MonoBehaviour
+public class PendulumController :  GenericObstacle
 {
     [SerializeField]
     private GameStateEventObj _GameStateObj;
@@ -12,13 +12,17 @@ public class PendulumController : MonoBehaviour
 
     [SerializeField]
     bool _OverridePlayerParent;
+
+    [SerializeField]
+    private Vector3 _CollisionForce;
+     
     private void Start()
     {
         _RightCollision.CollidedObj.AddListener(_ =>
         {
-            Vector3 force = transform.right * 500;
-            force.y = 100;
-            force.z = 100;
+            Vector3 force = transform.right * _CollisionForce.x;
+            force.y = _CollisionForce.y;
+            force.z = _CollisionForce.z;
             _.GetComponent<PlayerController>().Kill(force);
             if (_.tag == Constants.PLAYER_TAG)
             {
@@ -27,9 +31,9 @@ public class PendulumController : MonoBehaviour
         });
         _LeftCollision.CollidedObj.AddListener(_ =>
         {
-            Vector3 force = -transform.right * 500;
-            force.y = 100;
-            force.z = 100;
+            Vector3 force = -transform.right * _CollisionForce.x;
+            force.y = _CollisionForce.y;
+            force.z = _CollisionForce.z;
             _.GetComponent<PlayerController>().Kill(force);
             if (_.tag == Constants.PLAYER_TAG)
             {

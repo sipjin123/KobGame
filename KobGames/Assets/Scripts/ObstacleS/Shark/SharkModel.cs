@@ -55,7 +55,7 @@ public class SharkModel : MonoBehaviour
 
         if(_manualTimer < _Cooldown)
         {
-            if (_manualTimer < (_Cooldown - .5f))
+            if (_manualTimer > (_Cooldown - .5f))
             {
                 CallWarningVFX.Invoke();
             }

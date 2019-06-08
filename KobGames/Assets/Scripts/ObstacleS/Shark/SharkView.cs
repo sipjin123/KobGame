@@ -13,6 +13,7 @@ public class SharkView : MonoBehaviour
 
     [SerializeField]
     private Transform _MovableTransform;
+    public Transform MovableTransform { get { return _MovableTransform; } }
 
     [SerializeField]
     private float _Speed = 2;
@@ -39,6 +40,10 @@ public class SharkView : MonoBehaviour
     public void UpdatePosition(Vector3 pos)
     {
         _MovableTransform.position = pos;
+    }
+    public void UpdateRotation(Vector3 rot)
+    {
+        _MovableTransform.eulerAngles = rot;
     }
 
     public void EndOfPath()

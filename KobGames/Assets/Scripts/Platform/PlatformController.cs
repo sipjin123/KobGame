@@ -11,4 +11,7 @@ public class PlatformController : MonoBehaviour
     private PlatformView _PlatformView;
     public PlatformView PlatformView { get { return _PlatformView; } }
 
+    [SerializeField]
+    private PlatformType _PlatformType;
+    public PlatformType PlatformType {  get { return _PlatformType; } }
 }

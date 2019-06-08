@@ -6,7 +6,8 @@ public enum GameStates
 {
     Title,
     Start,
-    Results
+    Results,
+    Win
 }
 public enum CharacterStates
 {
@@ -17,7 +18,15 @@ public enum CharacterStates
 }
 public enum ObstacleType
 {
+    None,
+    Cannon,
     Spinner,
     Hammer,
     Sharks
+}
+public enum PlatformType
+{
+    Straight,
+    Left,
+    Right
 }

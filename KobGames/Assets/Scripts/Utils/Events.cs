@@ -35,3 +35,8 @@ public class ObjectEvent : UnityEvent<GameObject>
 {
 
 }
+
+public class SpawnObstacleEvent : UnityEvent<SpawnObstacleSet>
+{
+
+}

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FanController : MonoBehaviour
+public class FanController :  GenericObstacle
 {
     [SerializeField]
     private GameLevelData _GameLevelData;
@@ -20,7 +20,7 @@ public class FanController : MonoBehaviour
     private Transform _RotatingObject;
 
     private float _FlipVal;
-
+     
     private void Start()
     {
         bool ifDoubleSpinner = Random.Range(0, 3) == 2;

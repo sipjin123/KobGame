@@ -14,12 +14,14 @@ public class UIHandler : MonoBehaviour
     private Canvas _TitleCanvas;
     [SerializeField]
     private Canvas _ResultsCanvas;
+    [SerializeField]
+    private Canvas _WinCanvas;
 
     [SerializeField]
     private Animator _ResultAnim;
 
     [SerializeField]
-    private Button _RetryButton, _QuitButton;
+    private Button _RetryButton, _RetryWinButton, _QuitButton;
 
     [SerializeField]
     private GameLevelData _GameData;
@@ -38,6 +40,9 @@ public class UIHandler : MonoBehaviour
                 case GameStates.Start:
                     _TitleCanvas.enabled = false;
                     break;
+                case GameStates.Win:
+                    _WinCanvas.enabled = true;
+                    break;
                 case GameStates.Results:
                     StartCoroutine(DelayGameOver());
                     break;
@@ -45,6 +50,7 @@ public class UIHandler : MonoBehaviour
         });
 
         _RetryButton.onClick.AddListener(() => ResetGame());
+        _RetryWinButton.onClick.AddListener(() => ResetGame());
         _QuitButton.onClick.AddListener(() => QuitGame());
     }
     IEnumerator DelayGameOver()

@@ -6,6 +6,9 @@ using UnityEngine;
 public class GameHandler : MonoBehaviour
 {
     [SerializeField]
+    private List<LevelData> _LevelDataList;
+
+    [SerializeField]
     private GameStateEventObj _GameStateObj;
 
     [SerializeField]
@@ -21,9 +24,22 @@ public class GameHandler : MonoBehaviour
     private CinemachineVirtualCamera _Vcam;
 
     [SerializeField]
+    private ObstacleSpawner _ObstacleSpawner;
+
+    [SerializeField]
     private GameLevelData _GameData;
+    private void Awake()
+    {
+        _PlatformManager.SpawnEvent.AddListener(_ =>
+        {
+            _ObstacleSpawner.RequestObstacleAt(_);
+        });
+    }
+
     private void Start()
     {
+        _PlatformManager.InjectPlatformRequests(_LevelDataList[0].PlatformType);
+        _FirstPlatform = _PlatformManager.GetFirstPlatform();
 
         _GameStateObj.ChangeState.AddListener(_ => 
         {

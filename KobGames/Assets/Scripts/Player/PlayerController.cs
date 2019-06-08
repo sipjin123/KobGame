@@ -17,7 +17,7 @@ public class PlayerController : GenericController
     {
         if (_PlayerControlled)
         {
-            if (Input.GetKey(KeyCode.Space))
+            if (Input.GetKey(KeyCode.Space) || Input.GetKey(KeyCode.Mouse0))
             {
                 _PlayerView.RunEvent.Invoke(true);
                 _PlayerViewAnim.SetTargetSpeed(1);
@@ -61,7 +61,7 @@ public class PlayerController : GenericController
             var temp = _PlayerModel.GetNextNode();
             if(temp == null)
             {
-                Debug.LogError("End of GAme");
+                _GameStateObj.ChangeState.Invoke(GameStates.Win);
                 return;
             }
             _PlayerView.TargetPosEvent.Invoke(temp.position);

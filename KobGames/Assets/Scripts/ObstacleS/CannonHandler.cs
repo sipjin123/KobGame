@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CannonHandler : MonoBehaviour
+public class CannonHandler :  GenericObstacle
 {
     [SerializeField]
     private Transform _SpawnPoint;

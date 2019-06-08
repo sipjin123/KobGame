@@ -18960,6 +18960,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d66abe40acfe2484aa9889f8213f109d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _ObstacleType: 1
   _SpawnPoint: {fileID: 1209199575672686644}
   _CannonBall: {fileID: 1209199576347165659}
   _CannonRigid: {fileID: 1209199576347165657}
