@@ -8,7 +8,7 @@ public class SFXManager : MonoBehaviour
     private List<SFXCombination> _SFXList;
 
     [SerializeField]
-    private AudioSource _BGMSFX, _LostBGMSFX;
+    private AudioSource _BGMSFX, _LostBGMSFX, _WinSFX;
 
     bool _MuteBGM;
 
@@ -29,6 +29,11 @@ public class SFXManager : MonoBehaviour
             _MuteBGM = true;
             _BGMSFX.mute = true;
             _LostBGMSFX.Play();
+        }
+        if(sfx == SFX.Win)
+        {
+            _BGMSFX.mute = true;
+            _WinSFX.Play();
         }
 
         var sf = _SFXList.Find(_ => _.SFX == sfx);

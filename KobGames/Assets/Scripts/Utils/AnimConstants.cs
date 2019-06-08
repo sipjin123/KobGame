@@ -12,4 +12,5 @@ public static class Constants
 {
     public static string PLAYER_TAG = "Player";
     public static string Level_Name = "GameScene";
+    public static string Pref_HighScore = "HighScore";
 }

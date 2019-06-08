@@ -26,6 +26,9 @@ public class UIHandler : MonoBehaviour
     [SerializeField]
     private GameLevelData _GameData;
 
+    [SerializeField]
+    private Text  _HighSCore, _Time;
+
     private void Start()
     {
         if (_GameData.HasLaunched == false)
@@ -61,6 +64,18 @@ public class UIHandler : MonoBehaviour
             ResetGame();
         });
         _QuitButton.onClick.AddListener(() => QuitGame());
+    }
+    public void SetTime(float time)
+    {
+        int minutes = (int)time / 60;
+        float seconds = time % 60;
+
+        _Time.text = minutes+" : " + seconds.ToString("f1");
+    }
+    
+    public void SetHighScore(float score)
+    {
+        _HighSCore.text = "HighScore: " + score;
     }
 
     private IEnumerator DelayGameOver()

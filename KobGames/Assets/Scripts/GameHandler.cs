@@ -29,6 +29,15 @@ public class GameHandler : MonoBehaviour
     [SerializeField]
     private GameLevelData _GameData;
 
+    [SerializeField]
+    private UIHandler _UIHandler;
+
+    [SerializeField]
+    private float _Timer;
+
+    [SerializeField]
+    private bool _TimerStart;
+
     private void Awake()
     {
         _PlatformManager.SpawnEvent.AddListener(_ =>
@@ -39,6 +48,7 @@ public class GameHandler : MonoBehaviour
 
     private void Start()
     {
+        _UIHandler.SetHighScore(PlayerPrefs.GetFloat(Constants.Pref_HighScore));
         _PlatformManager.InjectPlatformRequests(_LevelDataList[0].PlatformType);
         _FirstPlatform = _PlatformManager.GetFirstPlatform();
 
@@ -50,6 +60,16 @@ public class GameHandler : MonoBehaviour
                 tempTrans.transform.position = _Players[0].transform.position;
                 _Vcam.Follow = tempTrans.transform;
                 _Vcam.LookAt = tempTrans.transform;
+            }
+            else if(_ == GameStates.Win)
+            {
+                var highSCore = PlayerPrefs.GetFloat(Constants.Pref_HighScore);
+                Debug.LogError("My score is : " + highSCore);
+                if (_Timer < highSCore || highSCore < 1)
+                {
+                    PlayerPrefs.SetFloat(Constants.Pref_HighScore, _Timer);
+                    _UIHandler.SetHighScore(_Timer);
+                }
             }
         });
 
@@ -72,6 +92,11 @@ public class GameHandler : MonoBehaviour
 
     private void Update()
     {
+        if(_TimerStart)
+        {
+            _Timer += Time.deltaTime;
+            _UIHandler.SetTime(_Timer);
+        }
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
             StartGame();
@@ -80,6 +105,7 @@ public class GameHandler : MonoBehaviour
 
     public void StartGame()
     {
+        _TimerStart = true;
         Factory.Get<SFXManager>().PlaySFX(SFX.Button);
         _Players[0].PlayerModel.InjectNodes(_PlatformManager.GetPathList(1));
         _Players[1].PlayerModel.InjectNodes(_PlatformManager.GetPathList(2));

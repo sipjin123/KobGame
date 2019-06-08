@@ -10,6 +10,8 @@ public class PlayerController : GenericController
 
     public Rigidbody RigidBody { get { return _RigidBody; } }
 
+    private bool _HasEnded;
+
     private bool _HasStarted;
 
     private float _CautiousTimer = 4;
@@ -106,6 +108,9 @@ public class PlayerController : GenericController
             var temp = _PlayerModel.GetNextNode();
             if (temp == null)
             {
+                if (_HasEnded)
+                    return;
+                _HasEnded = true;
                 if (_PlayerControlled)
                     _GameStateObj.ChangeState.Invoke(GameStates.Win);
                 else
