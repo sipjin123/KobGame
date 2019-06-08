@@ -21,9 +21,15 @@ public class UIHandler : MonoBehaviour
     [SerializeField]
     private Button _RetryButton, _QuitButton;
 
+    [SerializeField]
+    private GameLevelData _GameData;
     void Start()
     {
-        _TitleCanvas.enabled = true;
+        if (_GameData.HasLaunched == false)
+        {
+            _TitleCanvas.enabled = true;
+            _GameData.HasLaunched = true;
+        }
 
         _GameStateObj.ChangeState.AddListener(_ =>
         {
@@ -41,7 +47,6 @@ public class UIHandler : MonoBehaviour
         _RetryButton.onClick.AddListener(() => ResetGame());
         _QuitButton.onClick.AddListener(() => QuitGame());
     }
-
     IEnumerator DelayGameOver()
     {
 

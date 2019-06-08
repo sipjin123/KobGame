@@ -11,19 +11,23 @@ public class PlayerController : GenericController
     private Rigidbody _RigidBody;
     public Rigidbody RigidBody { get { return _RigidBody; } }
 
+    [SerializeField]
+    private bool _PlayerControlled;
     public void FixedUpdate()
     {
-        if(Input.GetKey(KeyCode.Space))
+        if (_PlayerControlled)
         {
-            _PlayerView.RunEvent.Invoke(true);
-            _PlayerViewAnim.SetTargetSpeed(1);
+            if (Input.GetKey(KeyCode.Space))
+            {
+                _PlayerView.RunEvent.Invoke(true);
+                _PlayerViewAnim.SetTargetSpeed(1);
+            }
+            else
+            {
+                _PlayerView.RunEvent.Invoke(false);
+                _PlayerViewAnim.SetTargetSpeed(0);
+            }
         }
-        else
-        {
-            _PlayerView.RunEvent.Invoke(false);
-            _PlayerViewAnim.SetTargetSpeed(0);
-        }
-
     }
 
     public void AddParent(Transform parent)

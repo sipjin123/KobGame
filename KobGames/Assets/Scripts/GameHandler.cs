@@ -19,8 +19,12 @@ public class GameHandler : MonoBehaviour
 
     [SerializeField]
     private CinemachineVirtualCamera _Vcam;
+
+    [SerializeField]
+    private GameLevelData _GameData;
     private void Start()
     {
+
         _GameStateObj.ChangeState.AddListener(_ => 
         {
             if(_ == GameStates.Results)
@@ -31,6 +35,23 @@ public class GameHandler : MonoBehaviour
                 _Vcam.LookAt = tempTrans.transform;
             }
         });
+
+        if (_GameData.HasLaunched == true)
+        {
+            StartCoroutine(DelayStart());
+        }
+
+    }
+
+    private void OnApplicationQuit()
+    {
+        _GameData.HasLaunched = false;
+    }
+
+    IEnumerator DelayStart()
+    {
+        yield return new WaitForSeconds(.5f);
+        StartGame();
     }
 
 
@@ -42,15 +63,6 @@ public class GameHandler : MonoBehaviour
         }
     }
 
-    private void OnGUI()
-    {
-        if(GUILayout.Button( "PLay", GUILayout.Height(100),GUILayout.Width(100)))
-        {
-            StartGame();
-        }
-
-
-    }
 
     public void StartGame()
     {

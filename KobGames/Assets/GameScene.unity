@@ -1834,6 +1834,7 @@ MonoBehaviour:
   - {fileID: 1563907940}
   _PlatformManager: {fileID: 355168608}
   _Vcam: {fileID: 1502760668}
+  _GameData: {fileID: 11400000, guid: b4505daa040de4b40af9ecce50be0e47, type: 2}
 --- !u!4 &1018927391 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6818480647915311598, guid: 393e56f6b87e5ae4bade78ef0bd13b83,
@@ -2167,7 +2168,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1385631472}
-  m_LocalRotation: {x: 0.32723856, y: -0.079321325, z: 0.02757858, w: 0.9412027}
+  m_LocalRotation: {x: 0.3272386, y: -0.079321325, z: 0.027578581, w: 0.9412027}
   m_LocalPosition: {x: 3.76, y: 21.23614, z: -12.01}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -2314,7 +2315,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1502760666}
-  m_LocalRotation: {x: 0.32723856, y: -0.079321325, z: 0.02757858, w: 0.9412027}
+  m_LocalRotation: {x: 0.3272386, y: -0.079321325, z: 0.027578581, w: 0.9412027}
   m_LocalPosition: {x: 3.76, y: 21.23614, z: -12.01}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -2738,6 +2739,7 @@ MonoBehaviour:
   _ResultAnim: {fileID: 707467526}
   _RetryButton: {fileID: 2042272196}
   _QuitButton: {fileID: 544741370}
+  _GameData: {fileID: 11400000, guid: b4505daa040de4b40af9ecce50be0e47, type: 2}
 --- !u!1 &1862263771
 GameObject:
   m_ObjectHideFlags: 0
@@ -3425,6 +3427,11 @@ PrefabInstance:
     - target: {fileID: 5726483210778391649, guid: b812bbb1305b0cd43af53813c3659b9d,
         type: 3}
       propertyPath: m_UseGravity
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5726483210778391651, guid: b812bbb1305b0cd43af53813c3659b9d,
+        type: 3}
+      propertyPath: _PlayerControlled
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6470053249474333405, guid: b812bbb1305b0cd43af53813c3659b9d,
