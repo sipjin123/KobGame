@@ -24,13 +24,6 @@ public class PlayerController : GenericController
             _PlayerViewAnim.SetTargetSpeed(0);
         }
 
-        if(Input.GetKeyDown(KeyCode.V))
-        {
-            Collider.enabled = false;
-            Vector3 force = new Vector3(100, 200, 100);//GetComponent<Rigidbody>().velocity
-            GetComponent<PlayerController>().RigidBody.AddForce(force);
-            GetComponent<PlayerController>().RigidBody.constraints = RigidbodyConstraints.None;
-        }
     }
 
     public void AddParent(Transform parent)

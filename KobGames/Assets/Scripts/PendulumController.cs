@@ -16,7 +16,9 @@ public class PendulumController : MonoBehaviour
     {
         _RightCollision.CollidedObj.AddListener(_ =>
         {
-            Vector3 force = new Vector3(500, 100,100);
+            Vector3 force = transform.right * 500;
+            force.y = 100;
+            force.z = 100;
             _.GetComponent<PlayerController>().Kill(force);
             if (_.tag == Constants.PLAYER_TAG)
             {
@@ -25,7 +27,9 @@ public class PendulumController : MonoBehaviour
         });
         _LeftCollision.CollidedObj.AddListener(_ =>
         {
-            Vector3 force = new Vector3(-500, 100, 100);
+            Vector3 force = -transform.right * 500;
+            force.y = 100;
+            force.z = 100;
             _.GetComponent<PlayerController>().Kill(force);
             if (_.tag == Constants.PLAYER_TAG)
             {
