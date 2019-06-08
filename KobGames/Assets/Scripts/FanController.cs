@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PassiveSpinner : MonoBehaviour
+public class FanController : MonoBehaviour
 {
     [SerializeField]
     private GameLevelData _GameLevelData;
@@ -27,15 +27,17 @@ public class PassiveSpinner : MonoBehaviour
         _ExtraSpinner.SetActive(ifDoubleSpinner);
 
         if (ifDoubleSpinner == false)
-            _FlipVal = 1;// Random.Range(0, 3) == 2 ? 1 : -1;
+            _FlipVal = 1;
         else
-            _FlipVal = .5f; //Random.Range(0, 3) == 2 ? .5f : -.5f;
+            _FlipVal = .5f;
 
 
         foreach (var col in _ColHandler)
         {
             col.CollidedObj.AddListener(_ =>
             {
+                _.GetComponent<PlayerController>().KillOnSpot();
+                if(_.tag == Constants.PLAYER_TAG)
                 _GameStateObj.ChangeState.Invoke(GameStates.Results);
             });
         }

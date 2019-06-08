@@ -75,11 +75,12 @@
     <Compile Include="Assets\Scripts\Data\CharacterData.cs" />
     <Compile Include="Assets\Scripts\Data\GameLevelData.cs" />
     <Compile Include="Assets\Scripts\Data\GameStateEventObj.cs" />
+    <Compile Include="Assets\Scripts\FanController.cs" />
     <Compile Include="Assets\Scripts\GameHandler.cs" />
     <Compile Include="Assets\Scripts\Interface\IModel.cs" />
     <Compile Include="Assets\Scripts\Interface\IView.cs" />
     <Compile Include="Assets\Scripts\Interface\IViewAnimation.cs" />
-    <Compile Include="Assets\Scripts\PassiveSpinner.cs" />
+    <Compile Include="Assets\Scripts\PendulumController.cs" />
     <Compile Include="Assets\Scripts\Platform\PlatformController.cs" />
     <Compile Include="Assets\Scripts\Platform\PlatformManager.cs" />
     <Compile Include="Assets\Scripts\Platform\PlatformModel.cs" />

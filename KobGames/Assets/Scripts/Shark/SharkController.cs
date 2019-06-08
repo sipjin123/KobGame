@@ -21,6 +21,8 @@ public class SharkController : MonoBehaviour
     {
         _CollisionHandler.CollidedObj.AddListener(_ => 
         {
+            _.GetComponent<PlayerController>().AddParent(_SharkModel.MouthLocation.transform);
+            if(_.tag == Constants.PLAYER_TAG)
             _GameStateObj.ChangeState.Invoke(GameStates.Results);
         });
 

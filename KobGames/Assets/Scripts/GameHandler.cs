@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using Cinemachine;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -16,6 +17,23 @@ public class GameHandler : MonoBehaviour
     [SerializeField]
     private PlatformManager _PlatformManager;
 
+    [SerializeField]
+    private CinemachineVirtualCamera _Vcam;
+    private void Start()
+    {
+        _GameStateObj.ChangeState.AddListener(_ => 
+        {
+            if(_ == GameStates.Results)
+            {
+                GameObject tempTrans = new GameObject();
+                tempTrans.transform.position = _Players[0].transform.position;
+                _Vcam.Follow = tempTrans.transform;
+                _Vcam.LookAt = tempTrans.transform;
+            }
+        });
+    }
+
+
     private void Update()
     {
         if(Input.GetKeyDown(KeyCode.Alpha1))
@@ -30,6 +48,8 @@ public class GameHandler : MonoBehaviour
         {
             StartGame();
         }
+
+
     }
 
     public void StartGame()

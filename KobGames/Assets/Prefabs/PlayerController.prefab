@@ -266,7 +266,9 @@ MonoBehaviour:
   _PlayerView: {fileID: 5726483210126043233}
   _PlayerViewAnim: {fileID: 5726483211332139816}
   _PlayerModel: {fileID: 5726483209470237501}
+  _Collider: {fileID: 6470053249474333405}
   _GameStateObj: {fileID: 11400000, guid: a173b15a331ef0b4b9f287e1d16d3696, type: 2}
+  _RigidBody: {fileID: 5726483210778391649}
 --- !u!136 &6470053249474333405
 CapsuleCollider:
   m_ObjectHideFlags: 0

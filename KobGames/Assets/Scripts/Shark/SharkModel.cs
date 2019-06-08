@@ -9,6 +9,10 @@ public class SharkModel : MonoBehaviour
     private List<Transform> _LeftPathList, _RightPathList;
 
     [SerializeField]
+    private Transform _MouthLocation;
+    public Transform MouthLocation {  get { return _MouthLocation; } }
+
+    [SerializeField]
     private List<Vector3> _CurrentPathList;
     [SerializeField]
     private Transform _StartNode;
