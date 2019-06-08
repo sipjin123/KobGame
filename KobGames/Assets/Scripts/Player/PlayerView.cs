@@ -13,15 +13,6 @@ public class PlayerView : MonoBehaviour, IView
         return _MovableTransform;
     }
 
-    [SerializeField]
-    private CharacterController _CharController;
-
-    public CharacterController GetController()
-    {
-        return _CharController;
-    }
-
-
     public BoolEvent RunEvent = new BoolEvent();
     public BoolEvent DeadEvent = new BoolEvent();
     public FloatEvent SpeedEvent = new FloatEvent();

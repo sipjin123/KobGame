@@ -26,6 +26,7 @@ public class CannonHandler :  GenericObstacle
     private GameObject _WarningVFX, _ShotVFX;
     void Start()
     {
+        _Cooldown = Random.Range(2, 5);
         _CollisionHandler.CollidedObj.AddListener(_ => 
         {
             _.GetComponent<PlayerController>().Kill(transform.right * 1000);

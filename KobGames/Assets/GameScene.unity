@@ -503,6 +503,16 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5726483210778391649, guid: b812bbb1305b0cd43af53813c3659b9d,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 122
+      objectReference: {fileID: 0}
+    - target: {fileID: 5726483210778391649, guid: b812bbb1305b0cd43af53813c3659b9d,
+        type: 3}
+      propertyPath: m_UseGravity
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 727116964735828487, guid: b812bbb1305b0cd43af53813c3659b9d,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -603,6 +613,21 @@ PrefabInstance:
     - target: {fileID: 5726483210778391648, guid: b812bbb1305b0cd43af53813c3659b9d,
         type: 3}
       propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5726483210778391649, guid: b812bbb1305b0cd43af53813c3659b9d,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 122
+      objectReference: {fileID: 0}
+    - target: {fileID: 5726483210778391649, guid: b812bbb1305b0cd43af53813c3659b9d,
+        type: 3}
+      propertyPath: m_UseGravity
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5726483210778391651, guid: b812bbb1305b0cd43af53813c3659b9d,
+        type: 3}
+      propertyPath: _CautiousAI
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 727116964735828487, guid: b812bbb1305b0cd43af53813c3659b9d,

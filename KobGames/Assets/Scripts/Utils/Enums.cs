@@ -7,7 +7,8 @@ public enum GameStates
     Title,
     Start,
     Results,
-    Win
+    Win,
+    Lose
 }
 public enum CharacterStates
 {

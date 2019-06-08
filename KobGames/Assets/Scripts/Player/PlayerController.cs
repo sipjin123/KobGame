@@ -11,23 +11,68 @@ public class PlayerController : GenericController
     private Rigidbody _RigidBody;
     public Rigidbody RigidBody { get { return _RigidBody; } }
 
+    bool _HasStarted;
+
+    private float _CautiousTimer = 4;
+    private float _Timer = 0;
+    [SerializeField]
+    private bool _CautiousAI;
+
+    private bool _IsWaiting;
+
     [SerializeField]
     private bool _PlayerControlled;
     public void FixedUpdate()
     {
+        if (!_HasStarted)
+            return;
         if (_PlayerControlled)
         {
             if (Input.GetKey(KeyCode.Space) || Input.GetKey(KeyCode.Mouse0))
             {
-                _PlayerView.RunEvent.Invoke(true);
-                _PlayerViewAnim.SetTargetSpeed(1);
+                RunCommand(true);
             }
             else
             {
-                _PlayerView.RunEvent.Invoke(false);
-                _PlayerViewAnim.SetTargetSpeed(0);
+                RunCommand(false);
             }
         }
+        else
+        {
+            if (_CautiousAI)
+            {
+                _Timer += Time.deltaTime;
+                if (!_IsWaiting)
+                {
+                    RunCommand(true);
+                    if (_Timer > _CautiousTimer)
+                    {
+                        _Timer = 0;
+                        _IsWaiting = true;
+                    }
+                }
+                else
+                {
+                    RunCommand(false);
+                    if (_Timer > 2)
+                    {
+                        _Timer = 0;
+                        _IsWaiting = false;
+                    }
+                }
+            }
+            else
+            {
+                RunCommand(true);
+            }
+        }
+    }
+
+    void RunCommand(bool ifRun)
+    {
+        _PlayerView.RunEvent.Invoke(ifRun);
+        _PlayerViewAnim.SetTargetSpeed(ifRun ? 1 : 0);
+
     }
 
     public void AddParent(Transform parent)
@@ -61,7 +106,11 @@ public class PlayerController : GenericController
             var temp = _PlayerModel.GetNextNode();
             if(temp == null)
             {
-                _GameStateObj.ChangeState.Invoke(GameStates.Win);
+                if(_PlayerControlled)
+                    _GameStateObj.ChangeState.Invoke(GameStates.Win);
+                else
+                    _GameStateObj.ChangeState.Invoke(GameStates.Results);
+
                 return;
             }
             _PlayerView.TargetPosEvent.Invoke(temp.position);
@@ -75,6 +124,7 @@ public class PlayerController : GenericController
                     _PlayerView.SpeedEvent.Invoke(_PlayerModel.GetSpeed());
                     _PlayerView.TargetPosEvent.Invoke(_PlayerModel.CurrentNode.position);
                     _PlayerModel.UpdateState(CharacterStates.Idle);
+                    _HasStarted = true;
                     break;
                 case GameStates.Results:
                     break;
