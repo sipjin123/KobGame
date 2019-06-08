@@ -1,9 +1,9 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using System.IO;
 using UnityEditor;
-using System.IO;
+using UnityEngine;
+
 #if UNITY_EDITOR
+
 public static class ScriptableObjectUtility
 {
     [MenuItem("Assets/Create/GameLevelData")]
@@ -11,16 +11,19 @@ public static class ScriptableObjectUtility
     {
         ScriptableObjectUtility.CreateAsset<GameLevelData>();
     }
+
     [MenuItem("Assets/Create/GameStateEventObj")]
     public static void Create_GameStateEventObj()
     {
         ScriptableObjectUtility.CreateAsset<GameStateEventObj>();
     }
+
     [MenuItem("Assets/Create/CharacterData")]
     public static void Create_CharacterData()
     {
         ScriptableObjectUtility.CreateAsset<CharacterData>();
     }
+
     [MenuItem("Assets/Create/LevelData")]
     public static void Create_LevelData()
     {
@@ -53,4 +56,5 @@ public static class ScriptableObjectUtility
         Selection.activeObject = asset;
     }
 }
+
 #endif

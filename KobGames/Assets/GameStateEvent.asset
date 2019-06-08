@@ -9,7 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 34f799e11e8f0204ea669a0a7a705e0c, type: 3}
-  m_Name: New CharacterData
+  m_Script: {fileID: 11500000, guid: e914c06172e9cd348809830fff424783, type: 3}
+  m_Name: GameStateEvent
   m_EditorClassIdentifier: 
-  Speed: 10
+  ChangeState:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: GameStateEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null

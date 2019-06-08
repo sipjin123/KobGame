@@ -1,7 +1,7 @@
-﻿
-public class Enums
+﻿public class Enums
 {
 }
+
 public enum GameStates
 {
     Title,
@@ -10,6 +10,7 @@ public enum GameStates
     Win,
     Lose
 }
+
 public enum CharacterStates
 {
     Ready,
@@ -17,6 +18,7 @@ public enum CharacterStates
     Died,
     Idle
 }
+
 public enum ObstacleType
 {
     None,
@@ -25,6 +27,7 @@ public enum ObstacleType
     Hammer,
     Sharks
 }
+
 public enum PlatformType
 {
     Straight,

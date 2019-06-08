@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -10,28 +9,30 @@ public class SharkModel : MonoBehaviour
 
     [SerializeField]
     private Transform _MouthLocation;
-    public Transform MouthLocation {  get { return _MouthLocation; } }
+
+    public Transform MouthLocation { get { return _MouthLocation; } }
 
     [SerializeField]
     private List<Vector3> _CurrentPathList;
+
     [SerializeField]
     private Transform _StartNode;
 
     public Vector3Event StartPostUpdate = new Vector3Event();
     public UnityEvent CallWarningVFX = new UnityEvent();
 
-    bool _StartAtLeft = true;
+    private bool _StartAtLeft = true;
     public bool StartAtLeft { get { return _StartAtLeft; } }
 
     [SerializeField]
     private Transform _TransformObject;
 
-    float _manualTimer;
+    private float _manualTimer;
 
     [SerializeField]
-    float _Cooldown = 5;
+    private float _Cooldown = 5;
 
-    bool _Started = false;
+    private bool _Started = false;
     public UnityEvent TriggerObstacle = new UnityEvent();
 
     private void Start()
@@ -52,8 +53,7 @@ public class SharkModel : MonoBehaviour
         if (_Started)
             return;
 
-
-        if(_manualTimer < _Cooldown)
+        if (_manualTimer < _Cooldown)
         {
             if (_manualTimer > (_Cooldown - .5f))
             {
@@ -67,6 +67,7 @@ public class SharkModel : MonoBehaviour
             TriggerObstacle.Invoke();
         }
     }
+
     public Vector3 GetNextNode()
     {
         Vector3 vecNode = new Vector3();

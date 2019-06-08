@@ -1,7 +1,5 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 
 public static class Factory
 {
@@ -16,5 +14,4 @@ public static class Factory
     {
         return (T)factoryMap[typeof(T)];
     }
-
 }

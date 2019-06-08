@@ -1,8 +1,6 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class PendulumController :  GenericObstacle
+public class PendulumController : GenericObstacle
 {
     [SerializeField]
     private GameStateEventObj _GameStateObj;
@@ -11,11 +9,11 @@ public class PendulumController :  GenericObstacle
     private CollisionHandler _RightCollision, _LeftCollision;
 
     [SerializeField]
-    bool _OverridePlayerParent;
+    private bool _OverridePlayerParent;
 
     [SerializeField]
     private Vector3 _CollisionForce;
-     
+
     private void Start()
     {
         _RightCollision.CollidedObj.AddListener(_ =>

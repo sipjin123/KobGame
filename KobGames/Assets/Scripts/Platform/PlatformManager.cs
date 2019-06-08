@@ -1,11 +1,11 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
 public class PlatformManager : MonoBehaviour
 {
     [SerializeField]
     private List<PlatformController> _PlatformList;
+
     public PlatformController GetFirstPlatform()
     {
         return _PlatformList[0];
@@ -21,12 +21,13 @@ public class PlatformManager : MonoBehaviour
     private GameLevelData _GameData;
 
     public SpawnObstacleEvent SpawnEvent = new SpawnObstacleEvent();
+
     public List<Transform> GetPathList(int player)
     {
         List<Transform> nodeList = new List<Transform>();
-        foreach(PlatformController platform in _PlatformList)
+        foreach (PlatformController platform in _PlatformList)
         {
-            foreach(Transform transList in platform.PlatformModel.GetPathNodes(player))
+            foreach (Transform transList in platform.PlatformModel.GetPathNodes(player))
                 nodeList.Add(transList);
         }
 
@@ -36,21 +37,18 @@ public class PlatformManager : MonoBehaviour
     public void InjectPlatformRequests(List<PlatformType> platformType)
     {
         bool isInitialized = true;
-        
+
         int platformCount = platformType.Count;
-        for(int i = 0; i < platformCount; i++ )
+        for (int i = 0; i < platformCount; i++)
         {
             PlatformController extractedPlatform = _PlatformPool.Find(_ => _.PlatformType == platformType[i]);
-
 
             if (isInitialized)
             {
                 isInitialized = false;
-
             }
             extractedPlatform.transform.position = _StartingSpawnPoint.position;
             extractedPlatform.transform.eulerAngles = _StartingSpawnPoint.eulerAngles;
-
 
             _PlatformPool.Remove(extractedPlatform);
             _PlatformList.Add(extractedPlatform);
@@ -62,7 +60,7 @@ public class PlatformManager : MonoBehaviour
                 return;
             }
             var nextSpawnType = platformType[i + 1];
-            var nextExtect =  extractedPlatform.PlatformModel.SpawnableNode.Find(_ => _.PlatformType == nextSpawnType);
+            var nextExtect = extractedPlatform.PlatformModel.SpawnableNode.Find(_ => _.PlatformType == nextSpawnType);
 
             var nextSpawnPoint = nextExtect.SpawnPoint;
             var tem = GameObject.CreatePrimitive(PrimitiveType.Sphere);
@@ -71,12 +69,11 @@ public class PlatformManager : MonoBehaviour
         }
     }
 
-
     private void SetupListeners()
     {
-        foreach(var platforms in _PlatformList)
+        foreach (var platforms in _PlatformList)
         {
-            platforms.PlatformModel.SpawnEvent.AddListener(_ => 
+            platforms.PlatformModel.SpawnEvent.AddListener(_ =>
             {
                 SpawnEvent.Invoke(_);
             });

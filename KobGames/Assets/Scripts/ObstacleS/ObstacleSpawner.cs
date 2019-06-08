@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
 public class ObstacleSpawner : MonoBehaviour
@@ -18,22 +17,24 @@ public class ObstacleSpawner : MonoBehaviour
 
     public void RequestObstacleAt(SpawnObstacleSet spawnSet)
     {
-
         var obstacle = _ObstacleList.Find(_ => _.GetComponent<GenericObstacle>().GetObstacleType() == spawnSet.Type);
 
-        if(obstacle == null)
+        if (obstacle == null)
         {
-            switch(spawnSet.Type)
+            switch (spawnSet.Type)
             {
                 case ObstacleType.Cannon:
                     obstacle = Instantiate(_CannonTrap, _Pool);
                     break;
+
                 case ObstacleType.Sharks:
                     obstacle = Instantiate(_SharkTrap, _Pool);
                     break;
+
                 case ObstacleType.Hammer:
                     obstacle = Instantiate(_PendulumTrap, _Pool);
                     break;
+
                 case ObstacleType.Spinner:
                     obstacle = Instantiate(_SpinnerTrap, _Pool);
                     break;
@@ -48,6 +49,4 @@ public class ObstacleSpawner : MonoBehaviour
         obstacle.SetActive(true);
         _SpawnedList.Add(obstacle);
     }
-
-
 }

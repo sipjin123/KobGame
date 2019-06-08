@@ -1,7 +1,5 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Events;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
@@ -12,8 +10,10 @@ public class UIHandler : MonoBehaviour
 
     [SerializeField]
     private Canvas _TitleCanvas;
+
     [SerializeField]
     private Canvas _ResultsCanvas;
+
     [SerializeField]
     private Canvas _WinCanvas;
 
@@ -25,7 +25,8 @@ public class UIHandler : MonoBehaviour
 
     [SerializeField]
     private GameLevelData _GameData;
-    void Start()
+
+    private void Start()
     {
         if (_GameData.HasLaunched == false)
         {
@@ -40,9 +41,11 @@ public class UIHandler : MonoBehaviour
                 case GameStates.Start:
                     _TitleCanvas.enabled = false;
                     break;
+
                 case GameStates.Win:
                     _WinCanvas.enabled = true;
                     break;
+
                 case GameStates.Results:
                     StartCoroutine(DelayGameOver());
                     break;
@@ -53,19 +56,20 @@ public class UIHandler : MonoBehaviour
         _RetryWinButton.onClick.AddListener(() => ResetGame());
         _QuitButton.onClick.AddListener(() => QuitGame());
     }
-    IEnumerator DelayGameOver()
-    {
 
+    private IEnumerator DelayGameOver()
+    {
         yield return new WaitForSeconds(1.5f);
         _ResultsCanvas.enabled = true;
         _ResultAnim.Play(AnimConstants.ANIM_START);
     }
 
-    void ResetGame()
+    private void ResetGame()
     {
         SceneManager.LoadScene(Constants.Level_Name);
     }
-    void QuitGame()
+
+    private void QuitGame()
     {
         Application.Quit();
     }

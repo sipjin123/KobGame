@@ -28,6 +28,7 @@ public class GameHandler : MonoBehaviour
 
     [SerializeField]
     private GameLevelData _GameData;
+
     private void Awake()
     {
         _PlatformManager.SpawnEvent.AddListener(_ =>
@@ -41,9 +42,9 @@ public class GameHandler : MonoBehaviour
         _PlatformManager.InjectPlatformRequests(_LevelDataList[0].PlatformType);
         _FirstPlatform = _PlatformManager.GetFirstPlatform();
 
-        _GameStateObj.ChangeState.AddListener(_ => 
+        _GameStateObj.ChangeState.AddListener(_ =>
         {
-            if(_ == GameStates.Results)
+            if (_ == GameStates.Results)
             {
                 GameObject tempTrans = new GameObject();
                 tempTrans.transform.position = _Players[0].transform.position;
@@ -56,7 +57,6 @@ public class GameHandler : MonoBehaviour
         {
             StartCoroutine(DelayStart());
         }
-
     }
 
     private void OnApplicationQuit()
@@ -64,21 +64,19 @@ public class GameHandler : MonoBehaviour
         _GameData.HasLaunched = false;
     }
 
-    IEnumerator DelayStart()
+    private IEnumerator DelayStart()
     {
         yield return new WaitForSeconds(.5f);
         StartGame();
     }
 
-
     private void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Alpha1))
+        if (Input.GetKeyDown(KeyCode.Alpha1))
         {
             StartGame();
         }
     }
-
 
     public void StartGame()
     {
@@ -87,5 +85,4 @@ public class GameHandler : MonoBehaviour
         _Players[2].PlayerModel.InjectNodes(_PlatformManager.GetPathList(3));
         _GameStateObj.ChangeState.Invoke(GameStates.Start);
     }
-
 }

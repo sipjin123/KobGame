@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.Events;
 
 public class PlayerView : MonoBehaviour, IView
@@ -20,23 +18,23 @@ public class PlayerView : MonoBehaviour, IView
     public UnityEvent TargetReachedEvent = new UnityEvent();
 
     [SerializeField]
-    bool _RunFlag;
-    [SerializeField]
-    bool _IsDeadFlag;
+    private bool _RunFlag;
 
     [SerializeField]
-    Vector3 _TargetNode;
+    private bool _IsDeadFlag;
 
     [SerializeField]
-    float _Speed;
-
-    float _RotDamp;
+    private Vector3 _TargetNode;
 
     [SerializeField]
+    private float _Speed;
 
+    private float _RotDamp;
+
+    [SerializeField]
     private GameObject _KnockOutVFX;
 
-    void Start()
+    private void Start()
     {
         SpeedEvent.AddListener(_ => _Speed = _);
         RunEvent.AddListener(_ => _RunFlag = _);
@@ -46,14 +44,14 @@ public class PlayerView : MonoBehaviour, IView
             if (_IsDeadFlag)
                 _KnockOutVFX.SetActive(true);
         });
-        TargetPosEvent.AddListener(_ => 
+        TargetPosEvent.AddListener(_ =>
         {
             _RotDamp = 0;
             _TargetNode = _;
         });
     }
 
-    void LookAtTarget()
+    private void LookAtTarget()
     {
         if (_MovableTransform)
         {
@@ -65,16 +63,16 @@ public class PlayerView : MonoBehaviour, IView
         }
     }
 
-    void FixedUpdate()
+    private void FixedUpdate()
     {
         LookAtTarget();
         if (!_RunFlag || _IsDeadFlag)
             return;
 
-            if (Vector3.Distance(_MovableTransform.position, _TargetNode) < 2)
-            {
-                TargetReachedEvent.Invoke();
-            }
+        if (Vector3.Distance(_MovableTransform.position, _TargetNode) < 2)
+        {
+            TargetReachedEvent.Invoke();
+        }
 
         _MovableTransform.position = Vector3.MoveTowards(_MovableTransform.position, _TargetNode, (_Speed * Time.deltaTime));
     }

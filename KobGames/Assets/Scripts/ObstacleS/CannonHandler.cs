@@ -1,11 +1,10 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class CannonHandler :  GenericObstacle
+public class CannonHandler : GenericObstacle
 {
     [SerializeField]
     private Transform _SpawnPoint;
+
     [SerializeField]
     private GameObject _CannonBall;
 
@@ -17,6 +16,7 @@ public class CannonHandler :  GenericObstacle
 
     [SerializeField]
     private float _Cooldown = 4;
+
     private float _Timer;
 
     [SerializeField]
@@ -24,10 +24,11 @@ public class CannonHandler :  GenericObstacle
 
     [SerializeField]
     private GameObject _WarningVFX, _ShotVFX;
-    void Start()
+
+    private void Start()
     {
         _Cooldown = Random.Range(2, 5);
-        _CollisionHandler.CollidedObj.AddListener(_ => 
+        _CollisionHandler.CollidedObj.AddListener(_ =>
         {
             _.GetComponent<PlayerController>().Kill(transform.right * 1000);
             if (_.tag == Constants.PLAYER_TAG)
@@ -35,16 +36,16 @@ public class CannonHandler :  GenericObstacle
         });
     }
 
-    void Update()
+    private void Update()
     {
         if (_Timer < _Cooldown)
         {
             _Timer += Time.deltaTime;
-            if(_Timer >1)
+            if (_Timer > 1)
             {
                 _ShotVFX.SetActive(false);
             }
-            if(_Timer < _Cooldown-.5f)
+            if (_Timer < _Cooldown - .5f)
             {
                 _WarningVFX.SetActive(true);
             }
@@ -55,7 +56,7 @@ public class CannonHandler :  GenericObstacle
         }
     }
 
-    void Shoot()
+    private void Shoot()
     {
         _ShotVFX.SetActive(true);
         _WarningVFX.SetActive(false);
@@ -66,5 +67,4 @@ public class CannonHandler :  GenericObstacle
         _CannonBall.SetActive(true);
         _CannonRigid.AddForce(force);
     }
-
 }

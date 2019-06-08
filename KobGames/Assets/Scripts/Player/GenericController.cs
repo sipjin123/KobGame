@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class GenericController : MonoBehaviour
 {
@@ -14,9 +12,11 @@ public class GenericController : MonoBehaviour
 
     [SerializeField]
     protected PlayerModel _PlayerModel;
+
     public PlayerModel PlayerModel { get { return _PlayerModel; } }
 
     [SerializeField]
     protected Collider _Collider;
+
     public Collider Collider { get { return _Collider; } }
 }

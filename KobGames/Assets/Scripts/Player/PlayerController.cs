@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class PlayerController : GenericController
 {
@@ -9,12 +7,14 @@ public class PlayerController : GenericController
 
     [SerializeField]
     private Rigidbody _RigidBody;
+
     public Rigidbody RigidBody { get { return _RigidBody; } }
 
-    bool _HasStarted;
+    private bool _HasStarted;
 
     private float _CautiousTimer = 4;
     private float _Timer = 0;
+
     [SerializeField]
     private bool _CautiousAI;
 
@@ -22,6 +22,7 @@ public class PlayerController : GenericController
 
     [SerializeField]
     private bool _PlayerControlled;
+
     public void FixedUpdate()
     {
         if (!_HasStarted)
@@ -68,11 +69,10 @@ public class PlayerController : GenericController
         }
     }
 
-    void RunCommand(bool ifRun)
+    private void RunCommand(bool ifRun)
     {
         _PlayerView.RunEvent.Invoke(ifRun);
         _PlayerViewAnim.SetTargetSpeed(ifRun ? 1 : 0);
-
     }
 
     public void AddParent(Transform parent)
@@ -88,10 +88,9 @@ public class PlayerController : GenericController
         _PlayerView.DeadEvent.Invoke(true);
         GetComponent<PlayerController>().RigidBody.constraints = RigidbodyConstraints.None;
         GetComponent<PlayerController>().RigidBody.AddForce(force);
-
     }
 
-    public void KillOnSpot( )
+    public void KillOnSpot()
     {
         Collider.enabled = false;
         _RigidBody.useGravity = false;
@@ -99,14 +98,14 @@ public class PlayerController : GenericController
         _PlayerView.DeadEvent.Invoke(true);
     }
 
-    void Start()
+    private void Start()
     {
         _PlayerView.TargetReachedEvent.AddListener(() =>
         {
             var temp = _PlayerModel.GetNextNode();
-            if(temp == null)
+            if (temp == null)
             {
-                if(_PlayerControlled)
+                if (_PlayerControlled)
                     _GameStateObj.ChangeState.Invoke(GameStates.Win);
                 else
                     _GameStateObj.ChangeState.Invoke(GameStates.Results);
@@ -118,7 +117,7 @@ public class PlayerController : GenericController
 
         _GameStateObj.ChangeState.AddListener(_ =>
         {
-            switch(_)
+            switch (_)
             {
                 case GameStates.Start:
                     _PlayerView.SpeedEvent.Invoke(_PlayerModel.GetSpeed());
@@ -126,6 +125,7 @@ public class PlayerController : GenericController
                     _PlayerModel.UpdateState(CharacterStates.Idle);
                     _HasStarted = true;
                     break;
+
                 case GameStates.Results:
                     break;
             }

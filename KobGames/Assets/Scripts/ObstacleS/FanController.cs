@@ -1,8 +1,6 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class FanController :  GenericObstacle
+public class FanController : GenericObstacle
 {
     [SerializeField]
     private GameLevelData _GameLevelData;
@@ -20,7 +18,7 @@ public class FanController :  GenericObstacle
     private Transform _RotatingObject;
 
     private float _FlipVal;
-     
+
     private void Start()
     {
         bool ifDoubleSpinner = Random.Range(0, 3) == 2;
@@ -31,14 +29,13 @@ public class FanController :  GenericObstacle
         else
             _FlipVal = .5f;
 
-
         foreach (var col in _ColHandler)
         {
             col.CollidedObj.AddListener(_ =>
             {
                 _.GetComponent<PlayerController>().KillOnSpot();
-                if(_.tag == Constants.PLAYER_TAG)
-                _GameStateObj.ChangeState.Invoke(GameStates.Results);
+                if (_.tag == Constants.PLAYER_TAG)
+                    _GameStateObj.ChangeState.Invoke(GameStates.Results);
             });
         }
     }

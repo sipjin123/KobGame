@@ -1,14 +1,12 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class PlayerViewAnimation : MonoBehaviour, IViewAnimation
 {
     [SerializeField]
-    Animator _Animator;
+    private Animator _Animator;
 
-    float _lerpTimer = 0;
-    bool _ifReverse = false;
+    private float _lerpTimer = 0;
+    private bool _ifReverse = false;
 
     public Animator GetAnimator()
     {
@@ -23,7 +21,7 @@ public class PlayerViewAnimation : MonoBehaviour, IViewAnimation
 
     private void FixedUpdate()
     {
-        if(_ifReverse)
+        if (_ifReverse)
         {
             if (_lerpTimer > 0)
             {
@@ -33,7 +31,7 @@ public class PlayerViewAnimation : MonoBehaviour, IViewAnimation
         }
         else
         {
-            if(_lerpTimer < 1)
+            if (_lerpTimer < 1)
             {
                 _lerpTimer += Time.deltaTime;
                 _Animator.SetFloat(AnimConstants.SPEED, _lerpTimer);
