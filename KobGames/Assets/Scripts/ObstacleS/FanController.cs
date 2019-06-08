@@ -19,20 +19,23 @@ public class FanController : GenericObstacle
 
     private float _FlipVal;
 
+    private float _SpeedRandomizer;
+
     private void Start()
     {
         bool ifDoubleSpinner = Random.Range(0, 3) == 2;
         _ExtraSpinner.SetActive(ifDoubleSpinner);
 
-        if (ifDoubleSpinner == false)
-            _FlipVal = 1;
-        else
-            _FlipVal = .5f;
+        _SpeedRandomizer = Random.Range(.75f, 1.4f);
+        _FlipVal = 1 * _SpeedRandomizer;
+        if (ifDoubleSpinner == true)
+            _FlipVal *= .5f;
 
         foreach (var col in _ColHandler)
         {
             col.CollidedObj.AddListener(_ =>
             {
+                Factory.Get<SFXManager>().PlaySFX(SFX.DieSpin);
                 _.GetComponent<PlayerController>().KillOnSpot();
                 if (_.tag == Constants.PLAYER_TAG)
                     _GameStateObj.ChangeState.Invoke(GameStates.Results);

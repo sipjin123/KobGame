@@ -18,6 +18,7 @@ public class PendulumController : GenericObstacle
     {
         _RightCollision.CollidedObj.AddListener(_ =>
         {
+            Factory.Get<SFXManager>().PlaySFX(SFX.DiePendulum);
             Vector3 force = transform.right * _CollisionForce.x;
             force.y = _CollisionForce.y;
             force.z = _CollisionForce.z;
@@ -29,6 +30,7 @@ public class PendulumController : GenericObstacle
         });
         _LeftCollision.CollidedObj.AddListener(_ =>
         {
+            Factory.Get<SFXManager>().PlaySFX(SFX.DiePendulum);
             Vector3 force = -transform.right * _CollisionForce.x;
             force.y = _CollisionForce.y;
             force.z = _CollisionForce.z;

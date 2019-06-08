@@ -95,11 +95,12 @@ public class PlayerController : GenericController
         Collider.enabled = false;
         _RigidBody.useGravity = false;
         _PlayerViewAnim.GetAnimator().Play(AnimConstants.ANIM_DIE);
-        _PlayerView.DeadEvent.Invoke(true);
+        _PlayerView.DeadEvent.Invoke(true); 
     }
 
     private void Start()
     {
+        _PlayerViewAnim.GetAnimator().Play(AnimConstants.ANIM_READY);
         _PlayerView.TargetReachedEvent.AddListener(() =>
         {
             var temp = _PlayerModel.GetNextNode();
@@ -123,6 +124,7 @@ public class PlayerController : GenericController
                     _PlayerView.SpeedEvent.Invoke(_PlayerModel.GetSpeed());
                     _PlayerView.TargetPosEvent.Invoke(_PlayerModel.CurrentNode.position);
                     _PlayerModel.UpdateState(CharacterStates.Idle);
+                    _PlayerViewAnim.GetAnimator().Play(AnimConstants.ANIM_IDLE);
                     _HasStarted = true;
                     break;
 

@@ -34,3 +34,16 @@ public enum PlatformType
     Left,
     Right
 }
+
+public enum SFX
+{
+    SharkBite,
+    SharkLaunch,
+    DieSpin,
+    DiePendulum,
+    DieShark,
+    DieCannon,
+    Win,
+    Lose,
+    Button,
+}

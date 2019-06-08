@@ -36,6 +36,7 @@ public class PlayerView : MonoBehaviour, IView
 
     private void Start()
     {
+        _TargetNode = (_MovableTransform.position + transform.forward * 5);
         SpeedEvent.AddListener(_ => _Speed = _);
         RunEvent.AddListener(_ => _RunFlag = _);
         DeadEvent.AddListener(_ =>

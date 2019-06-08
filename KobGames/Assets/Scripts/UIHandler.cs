@@ -21,7 +21,7 @@ public class UIHandler : MonoBehaviour
     private Animator _ResultAnim;
 
     [SerializeField]
-    private Button _RetryButton, _RetryWinButton, _QuitButton;
+    private Button _RetryButton, _RetryWinButton, _QuitButton , _MenuButton;
 
     [SerializeField]
     private GameLevelData _GameData;
@@ -44,8 +44,9 @@ public class UIHandler : MonoBehaviour
 
                 case GameStates.Win:
                     _WinCanvas.enabled = true;
+                    Factory.Get<SFXManager>().PlaySFX(SFX.Win);
                     break;
-
+                    
                 case GameStates.Results:
                     StartCoroutine(DelayGameOver());
                     break;
@@ -54,6 +55,11 @@ public class UIHandler : MonoBehaviour
 
         _RetryButton.onClick.AddListener(() => ResetGame());
         _RetryWinButton.onClick.AddListener(() => ResetGame());
+        _MenuButton.onClick.AddListener(() => 
+        {
+            _GameData.HasLaunched = false;
+            ResetGame();
+        });
         _QuitButton.onClick.AddListener(() => QuitGame());
     }
 
@@ -61,16 +67,19 @@ public class UIHandler : MonoBehaviour
     {
         yield return new WaitForSeconds(1.5f);
         _ResultsCanvas.enabled = true;
+        Factory.Get<SFXManager>().PlaySFX(SFX.Lose);
         _ResultAnim.Play(AnimConstants.ANIM_START);
     }
 
     private void ResetGame()
     {
+        Factory.Get<SFXManager>().PlaySFX(SFX.Button);
         SceneManager.LoadScene(Constants.Level_Name);
     }
 
     private void QuitGame()
     {
+        Factory.Get<SFXManager>().PlaySFX(SFX.Button);
         Application.Quit();
     }
 }

@@ -80,6 +80,7 @@ public class GameHandler : MonoBehaviour
 
     public void StartGame()
     {
+        Factory.Get<SFXManager>().PlaySFX(SFX.Button);
         _Players[0].PlayerModel.InjectNodes(_PlatformManager.GetPathList(1));
         _Players[1].PlayerModel.InjectNodes(_PlatformManager.GetPathList(2));
         _Players[2].PlayerModel.InjectNodes(_PlatformManager.GetPathList(3));

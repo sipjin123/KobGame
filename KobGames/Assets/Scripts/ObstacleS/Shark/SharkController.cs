@@ -21,7 +21,9 @@ public class SharkController : GenericObstacle
     {
         _CollisionHandler.CollidedObj.AddListener(_ =>
         {
+            Factory.Get<SFXManager>().PlaySFX(SFX.SharkBite);
             _.GetComponent<PlayerController>().AddParent(_SharkModel.MouthLocation.transform);
+            _.GetComponent<PlayerController>().KillOnSpot();
             if (_.tag == Constants.PLAYER_TAG)
                 _GameStateObj.ChangeState.Invoke(GameStates.Results);
         });
@@ -55,6 +57,7 @@ public class SharkController : GenericObstacle
         });
         _SharkModel.TriggerObstacle.AddListener(() =>
         {
+            Factory.Get<SFXManager>().PlaySFX(SFX.SharkLaunch);
             _SharkView.TriggerTrap(_SharkModel.GetPathList(), _SharkModel.StartAtLeft);
             _SharkViewAnimator.SetAttack();
         });

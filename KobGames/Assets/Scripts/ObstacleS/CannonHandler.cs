@@ -25,11 +25,15 @@ public class CannonHandler : GenericObstacle
     [SerializeField]
     private GameObject _WarningVFX, _ShotVFX;
 
+    [SerializeField]
+    private AudioSource _Audio;
+
     private void Start()
     {
         _Cooldown = Random.Range(2, 5);
         _CollisionHandler.CollidedObj.AddListener(_ =>
         {
+            Factory.Get<SFXManager>().PlaySFX(SFX.DieCannon);
             _.GetComponent<PlayerController>().Kill(transform.right * 1000);
             if (_.tag == Constants.PLAYER_TAG)
                 _GameStateObj.ChangeState.Invoke(GameStates.Results);
@@ -58,6 +62,7 @@ public class CannonHandler : GenericObstacle
 
     private void Shoot()
     {
+        _Audio.Play();
         _ShotVFX.SetActive(true);
         _WarningVFX.SetActive(false);
         _Timer = 0;
