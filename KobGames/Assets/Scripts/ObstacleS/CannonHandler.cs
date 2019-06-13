@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 
 public class CannonHandler : GenericObstacle
 {
@@ -30,7 +31,7 @@ public class CannonHandler : GenericObstacle
 
     private void Start()
     {
-        _Cooldown = Random.Range(2, 5);
+        _Cooldown = Random.Range(3, 5);
         for (int i = 0; i < _CollisionHandler.Length; i++)
         {
             _CollisionHandler[i].CollidedObj.AddListener(_ =>
@@ -41,6 +42,7 @@ public class CannonHandler : GenericObstacle
                     _GameStateObj.ChangeState.Invoke(GameStates.Results);
             });
         }
+        Shoot();
     }
 
     private void Update()
@@ -55,7 +57,8 @@ public class CannonHandler : GenericObstacle
                     _ShotVFX[i].SetActive(false);
                 }
             }
-            if (_Timer < _Cooldown - .5f)
+
+            if (_Timer > _Cooldown - 1f)
             {
                 for (int i = 0; i < _SpawnPoint.Length; i++)
                 {
@@ -65,6 +68,7 @@ public class CannonHandler : GenericObstacle
         }
         else
         {
+            _Timer = 0;
             Shoot();
         }
     }
@@ -72,16 +76,22 @@ public class CannonHandler : GenericObstacle
     private void Shoot()
     {
         _Audio.Play();
+
         for (int i = 0; i < _SpawnPoint.Length; i++)
         {
+            _CannonRigid[i].velocity = new Vector3(0, 0, 0);
             _ShotVFX[i].SetActive(true);
             _WarningVFX[i].SetActive(false);
-            _Timer = 0;
-            _CannonRigid[i].velocity = new Vector3(0, 0, 0);
             var force = transform.right * 1000;
             _CannonBall[i].transform.position = _SpawnPoint[i].position;
-            _CannonRigid[i].AddForce(force);
+            _CannonRigid[i].AddRelativeForce(force);
             _CannonBall[i].SetActive(true);
         }
+        StartCoroutine(DelayShoot());
+    }
+
+    IEnumerator DelayShoot()
+    {
+        yield return new WaitForSeconds(.2f);
     }
 }

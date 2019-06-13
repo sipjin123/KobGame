@@ -6,6 +6,9 @@ public class PlayerView : MonoBehaviour, IView
     [SerializeField]
     private Transform _MovableTransform;
 
+    [SerializeField]
+    private ParticleSystem _RunParticles;
+
     public Transform GetTransform()
     {
         return _MovableTransform;
@@ -68,8 +71,12 @@ public class PlayerView : MonoBehaviour, IView
     {
         LookAtTarget();
         if (!_RunFlag || _IsDeadFlag)
+        {
+            _RunParticles.enableEmission = false;
             return;
+        }
 
+        _RunParticles.enableEmission = true;
         if (Vector3.Distance(_MovableTransform.position, _TargetNode) < 2)
         {
             TargetReachedEvent.Invoke();

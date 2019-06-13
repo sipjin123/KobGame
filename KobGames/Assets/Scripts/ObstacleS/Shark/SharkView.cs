@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -25,6 +26,9 @@ public class SharkView : MonoBehaviour
     public UnityEvent TriggerObstacle = new UnityEvent();
 
     private bool _StartAtLeft;
+
+    [SerializeField]
+    private GameObject _WarningSign;
 
     [SerializeField]
     private GameObject _LeftVFXStart, _LefVFXtEnd, _RightVFXStart, _RightVFXEnd;
@@ -55,24 +59,39 @@ public class SharkView : MonoBehaviour
         _StartPath = false;
     }
 
+    IEnumerator DelayWarningAnim()
+    {
+        _WarningSign.SetActive(true);
+        yield return new WaitForSeconds(1.5f);
+        _WarningSign.SetActive(false);
+    }
+
     public void InitWarningVFX()
     {
-        GameObject obj = _StartAtLeft ? _RightVFXStart : _LeftVFXStart;
-        obj.SetActive(true);
+        StartCoroutine(DelayWarningAnim());
+       // GameObject obj = _StartAtLeft ? _RightVFXStart : _LeftVFXStart;
+       // obj.SetActive(true);
     }
 
     public void TriggerTrap(List<Vector3> path, bool startAtLeft)
     {
+        _MovableTransform.gameObject.SetActive(true);
         _StartAtLeft = startAtLeft;
         _NodePath = path;
         _TargetNode = _NodePath[0];
 
-        _LeftVFXStart.SetActive(false);
+        //_LeftVFXStart.SetActive(false);
         _LefVFXtEnd.SetActive(false);
         _RightVFXEnd.SetActive(false);
-        _RightVFXStart.SetActive(false);
+        //_RightVFXStart.SetActive(false);
         _PathCounter = 0;
         _StartPath = true;
+    }
+
+    IEnumerator DelayDeactivation()
+    {
+        yield return new WaitForSeconds(.5f);
+        _MovableTransform.gameObject.SetActive(false);
     }
 
     private void FixedUpdate()
@@ -92,6 +111,7 @@ public class SharkView : MonoBehaviour
             _PathCounter++;
             if (_PathCounter == 4)
             {
+                StartCoroutine(DelayDeactivation());
                 GameObject obj = _StartAtLeft ? _RightVFXEnd : _LefVFXtEnd;
                 obj.SetActive(true);
             }
