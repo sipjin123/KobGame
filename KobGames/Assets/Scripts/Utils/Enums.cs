@@ -32,7 +32,8 @@ public enum PlatformType
 {
     Straight,
     Left,
-    Right
+    Right,
+    End
 }
 
 public enum SFX

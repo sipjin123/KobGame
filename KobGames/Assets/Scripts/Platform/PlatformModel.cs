@@ -20,11 +20,14 @@ public class PlatformModel : MonoBehaviour
     {
         int spawnableCount = _SpawnableNodes.Count;
         int index = 0;
+
+        return;
         foreach (var transforms in _SpawnableNodes)
         {
             int nullRandomizer = Random.Range(1, 10);
             int enumCount = ObstacleType.GetNames(typeof(ObstacleType)).Length;
             int obstacleRandomizer = Random.Range(1, enumCount);
+
             if (nullRandomizer > 2)
             {
                 if (index >= spawnableCount - 1 && (ObstacleType)obstacleRandomizer == ObstacleType.Spinner)

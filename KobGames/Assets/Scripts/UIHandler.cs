@@ -29,6 +29,8 @@ public class UIHandler : MonoBehaviour
     [SerializeField]
     private Text  _HighSCore, _Time;
 
+    bool _GameHasEnded;
+
     private void Start()
     {
         if (_GameData.HasLaunched == false)
@@ -46,11 +48,17 @@ public class UIHandler : MonoBehaviour
                     break;
 
                 case GameStates.Win:
+                    if (_GameHasEnded)
+                        return;
+                    _GameHasEnded = true;
                     _WinCanvas.enabled = true;
                     Factory.Get<SFXManager>().PlaySFX(SFX.Win);
                     break;
                     
                 case GameStates.Results:
+                    if (_GameHasEnded)
+                        return;
+                    _GameHasEnded = true;
                     StartCoroutine(DelayGameOver());
                     break;
             }
