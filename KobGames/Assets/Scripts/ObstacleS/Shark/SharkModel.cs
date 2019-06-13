@@ -37,6 +37,7 @@ public class SharkModel : MonoBehaviour
 
     private void Start()
     {
+        _Cooldown = Random.Range(3, 6);
         StartPostUpdate.Invoke(_StartNode.position);
     }
 

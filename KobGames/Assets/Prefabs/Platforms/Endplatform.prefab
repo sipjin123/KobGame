@@ -461,17 +461,8 @@ MonoBehaviour:
   - {fileID: 3967498352649061012}
   _PathNodes_P3:
   - {fileID: 4168484695614850981}
-  _SpawnableNodes:
-  - {fileID: 3644323527890459728}
-  - {fileID: 3967498352649061012}
-  - {fileID: 4168484695614850981}
-  _SpawnableNode:
-  - SpawnPoint: {fileID: 3644323527890459728}
-    PlatformType: 0
-  - SpawnPoint: {fileID: 3967498352649061012}
-    PlatformType: 0
-  - SpawnPoint: {fileID: 4168484695614850981}
-    PlatformType: 0
+  _SpawnableNodes: []
+  _SpawnableNode: []
 --- !u!1001 &1496632475169942433
 PrefabInstance:
   m_ObjectHideFlags: 0

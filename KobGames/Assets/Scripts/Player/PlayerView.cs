@@ -70,7 +70,7 @@ public class PlayerView : MonoBehaviour, IView
         if (!_RunFlag || _IsDeadFlag)
             return;
 
-        if (Vector3.Distance(_MovableTransform.position, _TargetNode) < 1)
+        if (Vector3.Distance(_MovableTransform.position, _TargetNode) < 2)
         {
             TargetReachedEvent.Invoke();
         }

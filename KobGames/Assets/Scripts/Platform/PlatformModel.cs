@@ -20,8 +20,7 @@ public class PlatformModel : MonoBehaviour
     {
         int spawnableCount = _SpawnableNodes.Count;
         int index = 0;
-
-        return;
+       // return;
         foreach (var transforms in _SpawnableNodes)
         {
             int nullRandomizer = Random.Range(1, 10);
