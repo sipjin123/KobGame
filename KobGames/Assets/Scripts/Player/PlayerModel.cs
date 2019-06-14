@@ -22,6 +22,9 @@ public class PlayerModel : MonoBehaviour, IModel
     [SerializeField]
     private List<Transform> _NodePaths;
 
+    [SerializeField]
+    private bool _LogNode;
+
     public void InjectNodes(List<Transform> nodes)
     {
         _NodePaths = nodes;
@@ -32,12 +35,16 @@ public class PlayerModel : MonoBehaviour, IModel
     {
         if (_NodePaths.Count > 0)
         {
+            if(_LogNode)
+            Debug.LogError("Removing");
             _NodePaths.RemoveAt(0);
+            if(_LogNode)
+            Debug.LogError("My next node is : "+_CurrentNode.name);
             _CurrentNode = _NodePaths.Count > 0 ? _NodePaths[0] : null;
+            return _CurrentNode;
         }
         else
             return null;
-        return _CurrentNode;
     }
 
     public CharStateEvent CharStateEvent = new CharStateEvent();

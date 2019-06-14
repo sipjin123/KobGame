@@ -59,6 +59,7 @@ public class PlayerView : MonoBehaviour, IView
         });
         TargetPosEvent.AddListener(_ =>
         {
+            //Debug.LogError("II am receiving target pos event : "+ _);
             _RotDamp = 0;
             _TargetNode = _;
         });
@@ -86,7 +87,7 @@ public class PlayerView : MonoBehaviour, IView
         }
 
         _RunParticles.enableEmission = true;
-        if (Vector3.Distance(_MovableTransform.position, _TargetNode) < 3)
+        if (Vector3.Distance(_MovableTransform.position, _TargetNode) < 2.2f)
         {
             if(_LogTargetReach)
             Debug.LogError("EVENT REACHED");

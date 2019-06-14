@@ -25,6 +25,9 @@ public class PlayerController : GenericController
     [SerializeField]
     private bool _PlayerControlled;
 
+    [SerializeField]
+    private bool _LogTarget;
+
     public void FixedUpdate()
     {
         if (!_HasStarted)
@@ -123,6 +126,11 @@ public class PlayerController : GenericController
         _PlayerView.TargetReachedEvent.AddListener(() =>
         {
             var temp = _PlayerModel.GetNextNode();
+            if (_LogTarget)
+            {
+                if(temp)
+                Debug.LogError("The node I got is : " + temp.gameObject.name);
+            }
             if (temp == null)
             {
                 if (_HasEnded)
@@ -131,7 +139,7 @@ public class PlayerController : GenericController
                 if (_PlayerControlled)
                     _GameStateObj.ChangeState.Invoke(GameStates.Win);
                 else
-                    _GameStateObj.ChangeState.Invoke(GameStates.Results);
+                    _GameStateObj.ChangeState.Invoke(GameStates.Lose);
 
                 return;
             }
