@@ -21,6 +21,9 @@ public class PendulumController : GenericObstacle
     [SerializeField]
     private GameObject _RightVFX, _LeftVFX;
 
+    [SerializeField]
+    private bool _FlattenPlayer;
+
     private void Start()
     {
         _Anim.speed = Random.Range(.5f, 1.5f);
@@ -31,7 +34,11 @@ public class PendulumController : GenericObstacle
             Vector3 force = transform.right * _CollisionForce.x;
             force.y = _CollisionForce.y;
             force.z = _CollisionForce.z;
-            _.GetComponent<PlayerController>().Kill(force);
+            if (!_FlattenPlayer)
+                _.GetComponent<PlayerController>().Kill(force);
+            else
+                _.GetComponent<PlayerController>().Flatten();
+
             if (_.tag == Constants.PLAYER_TAG)
             {
                 _GameStateObj.ChangeState.Invoke(GameStates.Results);
@@ -44,7 +51,10 @@ public class PendulumController : GenericObstacle
             Vector3 force = -transform.right * _CollisionForce.x;
             force.y = _CollisionForce.y;
             force.z = _CollisionForce.z;
-            _.GetComponent<PlayerController>().Kill(force);
+            if (!_FlattenPlayer)
+                _.GetComponent<PlayerController>().Kill(force);
+            else
+                _.GetComponent<PlayerController>().Flatten();
             if (_.tag == Constants.PLAYER_TAG)
             {
                 _GameStateObj.ChangeState.Invoke(GameStates.Results);

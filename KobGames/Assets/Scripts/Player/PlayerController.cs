@@ -84,20 +84,33 @@ public class PlayerController : GenericController
 
     public void Kill(Vector3 force)
     {
-        Collider.enabled = false;
         _RigidBody.useGravity = true;
         _PlayerViewAnim.GetAnimator().Play(AnimConstants.ANIM_DIE);
-        _PlayerView.DeadEvent.Invoke(true);
+        KillParameters();
         GetComponent<PlayerController>().RigidBody.constraints = RigidbodyConstraints.None;
         GetComponent<PlayerController>().RigidBody.AddForce(force);
     }
 
     public void KillOnSpot()
     {
-        Collider.enabled = false;
         _RigidBody.useGravity = false;
+        GetComponent<PlayerController>().RigidBody.constraints = RigidbodyConstraints.FreezeAll;
+        _PlayerViewAnim.GetAnimator().SetFloat(AnimConstants.ANIM_DIE, Random.Range(1, 4));
         _PlayerViewAnim.GetAnimator().Play(AnimConstants.ANIM_DIE);
-        _PlayerView.DeadEvent.Invoke(true); 
+        KillParameters();
+    }
+
+    public void Flatten()
+    {
+        GetComponent<PlayerController>().RigidBody.constraints = RigidbodyConstraints.FreezeAll;
+        _PlayerViewAnim.GetAnimator().Play(AnimConstants.ANIM_FLATTEN);
+        KillParameters();
+    }
+
+    private void KillParameters()
+    {
+        Collider.enabled = false;
+        _PlayerView.DeadEvent.Invoke(true);
     }
 
     private void Start()
