@@ -13,6 +13,8 @@ public class PlayerView : MonoBehaviour, IView
     {
         return _MovableTransform;
     }
+    [SerializeField]
+    private bool _LogTargetReach;
 
     public BoolEvent RunEvent = new BoolEvent();
     public BoolEvent DeadEvent = new BoolEvent();
@@ -37,6 +39,13 @@ public class PlayerView : MonoBehaviour, IView
     [SerializeField]
     private GameObject _KnockOutVFX;
 
+    [SerializeField]
+    private GameObject _SmokeParticle;
+    public GameObject SmokeParticle { get { return _SmokeParticle; } }
+
+    [SerializeField]
+    private GameObject _TrailParticle;
+    public GameObject TrailParticle { get { return _TrailParticle; } }
     private void Start()
     {
         _TargetNode = (_MovableTransform.position + transform.forward * 5);
@@ -77,8 +86,10 @@ public class PlayerView : MonoBehaviour, IView
         }
 
         _RunParticles.enableEmission = true;
-        if (Vector3.Distance(_MovableTransform.position, _TargetNode) < 2)
+        if (Vector3.Distance(_MovableTransform.position, _TargetNode) < 3)
         {
+            if(_LogTargetReach)
+            Debug.LogError("EVENT REACHED");
             TargetReachedEvent.Invoke();
         }
 

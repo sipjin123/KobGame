@@ -26,7 +26,7 @@ public class FanController : GenericObstacle
         bool ifDoubleSpinner = Random.Range(0, 3) == 2;
         _ExtraSpinner.SetActive(ifDoubleSpinner);
 
-        _SpeedRandomizer = Random.Range(.75f, 1.4f);
+        _SpeedRandomizer = Random.Range(.75f, 1.2f);
         _FlipVal = 1 * _SpeedRandomizer;
         if (ifDoubleSpinner == true)
             _FlipVal *= .5f;

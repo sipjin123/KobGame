@@ -84,17 +84,20 @@ public class PlayerController : GenericController
 
     public void Kill(Vector3 force)
     {
-        _RigidBody.useGravity = true;
-        _PlayerViewAnim.GetAnimator().Play(AnimConstants.ANIM_DIE);
-        KillParameters();
         GetComponent<PlayerController>().RigidBody.constraints = RigidbodyConstraints.None;
         GetComponent<PlayerController>().RigidBody.AddForce(force);
+
+        _PlayerView.TrailParticle.SetActive(true);
+        _RigidBody.useGravity = true;
+        _PlayerViewAnim.GetAnimator().Play(AnimConstants.ANIM_DIE);
+
+        _PlayerView.DeadEvent.Invoke(true);
+
     }
 
     public void KillOnSpot()
     {
         _RigidBody.useGravity = false;
-        GetComponent<PlayerController>().RigidBody.constraints = RigidbodyConstraints.FreezeAll;
         _PlayerViewAnim.GetAnimator().SetFloat(AnimConstants.ANIM_DIE, Random.Range(1, 4));
         _PlayerViewAnim.GetAnimator().Play(AnimConstants.ANIM_DIE);
         KillParameters();
@@ -102,7 +105,7 @@ public class PlayerController : GenericController
 
     public void Flatten()
     {
-        GetComponent<PlayerController>().RigidBody.constraints = RigidbodyConstraints.FreezeAll;
+        _PlayerView.SmokeParticle.SetActive(true);
         _PlayerViewAnim.GetAnimator().Play(AnimConstants.ANIM_FLATTEN);
         KillParameters();
     }
@@ -110,6 +113,7 @@ public class PlayerController : GenericController
     private void KillParameters()
     {
         Collider.enabled = false;
+        GetComponent<PlayerController>().RigidBody.constraints = RigidbodyConstraints.FreezeAll;
         _PlayerView.DeadEvent.Invoke(true);
     }
 

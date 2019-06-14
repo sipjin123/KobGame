@@ -38,6 +38,8 @@ public class GameHandler : MonoBehaviour
     [SerializeField]
     private bool _TimerStart;
 
+    [SerializeField]
+    private LevelData _CurrentLevelData;
 
     int randomPlatform = 0;
     private void Awake()
@@ -51,8 +53,10 @@ public class GameHandler : MonoBehaviour
     private void Start()
     {
         randomPlatform = Random.Range(0, _LevelDataList.Count);
+        _CurrentLevelData = _LevelDataList[randomPlatform];
+
         _UIHandler.SetHighScore(PlayerPrefs.GetFloat(Constants.Pref_HighScore));
-        _PlatformManager.InjectPlatformRequests(_LevelDataList[randomPlatform].PlatformType);
+        _PlatformManager.InjectPlatformRequests(_CurrentLevelData.PlatformType);
         _FirstPlatform = _PlatformManager.GetFirstPlatform();
 
         _GameStateObj.ChangeState.AddListener(_ =>
