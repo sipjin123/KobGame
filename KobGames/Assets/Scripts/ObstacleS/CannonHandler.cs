@@ -79,12 +79,12 @@ public class CannonHandler : GenericObstacle
 
         for (int i = 0; i < _SpawnPoint.Length; i++)
         {
-            _CannonRigid[i].velocity = new Vector3(0, 0, 0);
+            _CannonRigid[i].Sleep();
             _ShotVFX[i].SetActive(true);
             _WarningVFX[i].SetActive(false);
-            var force = transform.right * 1000;
+            var force = _SpawnPoint[i].forward * 1000;
             _CannonBall[i].transform.position = _SpawnPoint[i].position;
-            _CannonRigid[i].AddRelativeForce(force);
+            _CannonRigid[i].AddForce(force);
             _CannonBall[i].SetActive(true);
         }
         StartCoroutine(DelayShoot());
