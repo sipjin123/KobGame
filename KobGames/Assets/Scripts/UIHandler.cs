@@ -51,7 +51,7 @@ public class UIHandler : MonoBehaviour
             {
                 case GameStates.Start:
                     _TitleCanvas.enabled = false;
-                    _HintObj.SetActive(true);
+                    _HintObj.SetActive(true);   
                     break;
 
                 case GameStates.Win:
