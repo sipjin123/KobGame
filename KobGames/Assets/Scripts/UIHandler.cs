@@ -30,12 +30,32 @@ public class UIHandler : MonoBehaviour
     private GameLevelData _GameData;
 
     [SerializeField]
-    private Text  _HighSCore, _Time;
+    private Text  _HighSCore, _Time, _ScoreCombo, _TotalScoreCombo;
+
+    [SerializeField]
+    private Animator _ComboAnim, _TotalAnim;
 
     [SerializeField]
     private GameObject _HintObj;
 
     bool _GameHasEnded;
+
+    private void Awake()
+    {
+        Factory.Register<UIHandler>(this);
+    }
+
+
+    public void AddScoreCombo(int combo)
+    {
+        _ScoreCombo.text = "Bonus Pts: " + combo;
+        _ComboAnim.Play(AnimConstants.ANIM_START);
+    }
+    public void AddTotalScoreCombo(int combo)
+    {
+        _TotalScoreCombo.text = "TotalBonus Pts: " + combo;
+        _TotalAnim.Play(AnimConstants.ANIM_START);
+    }
 
     private void Start()
     {

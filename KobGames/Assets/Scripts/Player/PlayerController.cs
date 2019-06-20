@@ -28,9 +28,19 @@ public class PlayerController : GenericController
     [SerializeField]
     private bool _LogTarget;
 
+    [SerializeField]
+    private int _ScoreCombo;
+
+    [SerializeField]
+    private int _TotalScoreCombo;
+
+
+    [SerializeField]
+    private bool _EndMove;
+
     public void FixedUpdate()
     {
-        if (!_HasStarted)
+        if (!_HasStarted || _EndMove)
             return;
         if (_PlayerControlled)
         {
@@ -40,6 +50,8 @@ public class PlayerController : GenericController
             }
             else
             {
+                if(_PlayerView.IsDeadFlag == false)
+                ResetCombiMeter();
                 RunCommand(false);
             }
         }
@@ -76,6 +88,7 @@ public class PlayerController : GenericController
 
     private void RunCommand(bool ifRun)
     {
+
         _PlayerView.RunEvent.Invoke(ifRun);
         _PlayerViewAnim.SetTargetSpeed(ifRun ? 1 : 0);
     }
@@ -122,6 +135,7 @@ public class PlayerController : GenericController
 
     private void Start()
     {
+        _PlayerView.InjectAnim(_PlayerViewAnim);
         _PlayerViewAnim.GetAnimator().Play(AnimConstants.ANIM_READY);
         _PlayerView.TargetReachedEvent.AddListener(() =>
         {
@@ -143,6 +157,10 @@ public class PlayerController : GenericController
 
                 return;
             }
+            if (temp.name == "TurnRight")
+                _PlayerView.TurnOnReach(PlayerView.Turn.Right);
+            if (temp.name == "TurnLeft")
+                _PlayerView.TurnOnReach(PlayerView.Turn.Left);
             _PlayerView.TargetPosEvent.Invoke(temp.position);
         });
 
@@ -159,8 +177,40 @@ public class PlayerController : GenericController
                     break;
 
                 case GameStates.Results:
+                    _EndMove = true;
+                    break;
+                case GameStates.Win:
+                    ResetCombiMeter();
+                    _EndMove = true;
+                    break;
+                case GameStates.Lose:
+                    _EndMove = true;
                     break;
             }
         });
+    }
+
+    private void ResetCombiMeter()
+    {
+        if (_ScoreCombo > 1)
+        {
+            _TotalScoreCombo += _ScoreCombo;
+            Factory.Get<UIHandler>().AddTotalScoreCombo(_TotalScoreCombo);
+        }
+        _ScoreCombo = 0;
+        Factory.Get<UIHandler>().AddScoreCombo(_ScoreCombo);
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (_PlayerControlled)
+        {
+            if (other.gameObject.name == "Surpass")
+            {
+                _ScoreCombo++;
+                Factory.Get<UIHandler>().AddScoreCombo(_ScoreCombo);
+
+            }
+        }
     }
 }

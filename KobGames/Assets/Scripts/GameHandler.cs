@@ -44,12 +44,12 @@ public class GameHandler : MonoBehaviour
     int randomPlatform = 0;
     private void Awake()
     {
+
         _PlatformManager.SpawnEvent.AddListener(_ =>
         {
             _ObstacleSpawner.RequestObstacleAt(_);
         });
     }
-
     private void Start()
     {
         randomPlatform = Random.Range(0, _LevelDataList.Count);
