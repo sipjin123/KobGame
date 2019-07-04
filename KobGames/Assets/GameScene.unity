@@ -6614,7 +6614,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: 8fc06027b01064e4f885fd8dd2929310, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: 8fc06027b01064e4f885fd8dd2929310, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -7288,7 +7288,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4267862124863358342}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &1317877857
 AudioSource:
@@ -7971,11 +7971,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1833194237010618983}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: e2d7ca0943bf94341ad19f696e9a41d1,
-        type: 3}
-      propertyPath: m_Name
-      value: Plank1 (1)
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: e2d7ca0943bf94341ad19f696e9a41d1,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8045,6 +8040,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 0.63726056
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: e2d7ca0943bf94341ad19f696e9a41d1,
+        type: 3}
+      propertyPath: m_Name
+      value: Plank1 (1)
       objectReference: {fileID: 0}
     - target: {fileID: -1504981713932161579, guid: e2d7ca0943bf94341ad19f696e9a41d1,
         type: 3}
@@ -8825,11 +8825,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1833194237010618983}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: e2d7ca0943bf94341ad19f696e9a41d1,
-        type: 3}
-      propertyPath: m_Name
-      value: Plank1
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: e2d7ca0943bf94341ad19f696e9a41d1,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8899,6 +8894,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 0.63726056
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: e2d7ca0943bf94341ad19f696e9a41d1,
+        type: 3}
+      propertyPath: m_Name
+      value: Plank1
       objectReference: {fileID: 0}
     - target: {fileID: -1504981713932161579, guid: e2d7ca0943bf94341ad19f696e9a41d1,
         type: 3}
@@ -12856,7 +12856,7 @@ PrefabInstance:
     - target: {fileID: 56612063166847720, guid: 524bd7bfb7f245b48b225728e8fbf3be,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 56612063166847720, guid: 524bd7bfb7f245b48b225728e8fbf3be,
         type: 3}
@@ -13186,14 +13186,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4062229876104404026}
     m_Modifications:
-    - target: {fileID: 100000, guid: 24db637009606a146aeb219769705819, type: 3}
-      propertyPath: m_Name
-      value: Destroy_Circle_Plate
-      objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: 24db637009606a146aeb219769705819, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 24db637009606a146aeb219769705819, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -13249,6 +13241,14 @@ PrefabInstance:
     - target: {fileID: 400000, guid: 24db637009606a146aeb219769705819, type: 3}
       propertyPath: m_LocalScale.z
       value: 65.43765
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 24db637009606a146aeb219769705819, type: 3}
+      propertyPath: m_Name
+      value: Destroy_Circle_Plate
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 24db637009606a146aeb219769705819, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 24db637009606a146aeb219769705819, type: 3}
