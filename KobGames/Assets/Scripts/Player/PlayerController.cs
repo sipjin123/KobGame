@@ -1,7 +1,10 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 
 public class PlayerController : GenericController
 {
+    #region Variables
+
     [SerializeField]
     private GameStateEventObj _GameStateObj;
 
@@ -34,9 +37,77 @@ public class PlayerController : GenericController
     [SerializeField]
     private int _TotalScoreCombo;
 
-
     [SerializeField]
     private bool _EndMove;
+
+    [SerializeField]
+    private GameObject _StarVFX;
+
+    [SerializeField]
+    private AudioSource _AudioReward;
+
+    #endregion Variables
+
+    #region Init
+
+    private void Start()
+    {
+        _PlayerView.InjectAnim(_PlayerViewAnim);
+        _PlayerViewAnim.GetAnimator().Play(AnimConstants.ANIM_READY);
+        _PlayerView.TargetReachedEvent.AddListener(() =>
+        {
+            var temp = _PlayerModel.GetNextNode();
+
+            if (temp == null)
+            {
+                if (_HasEnded)
+                    return;
+                _HasEnded = true;
+                if (_PlayerControlled)
+                    _GameStateObj.ChangeState.Invoke(GameStates.Win);
+                else
+                    _GameStateObj.ChangeState.Invoke(GameStates.Lose);
+
+                return;
+            }
+            if (temp.name == Constants.COLLISION_RIGHT)
+                _PlayerView.TurnOnReach(Turn.Right);
+            if (temp.name == Constants.COLLISION_LEFT)
+                _PlayerView.TurnOnReach(Turn.Left);
+            _PlayerView.TargetPosEvent.Invoke(temp.position);
+        });
+
+        _GameStateObj.ChangeState.AddListener(_ =>
+        {
+            switch (_)
+            {
+                case GameStates.Start:
+                    _PlayerView.SpeedEvent.Invoke(_PlayerModel.GetSpeed());
+                    _PlayerView.TargetPosEvent.Invoke(_PlayerModel.CurrentNode.position);
+                    _PlayerModel.UpdateState(CharacterStates.Idle);
+                    _PlayerViewAnim.GetAnimator().Play(AnimConstants.ANIM_IDLE);
+                    _HasStarted = true;
+                    break;
+
+                case GameStates.Results:
+                    _EndMove = true;
+                    break;
+
+                case GameStates.Win:
+                    ResetCombiMeter();
+                    _EndMove = true;
+                    break;
+
+                case GameStates.Lose:
+                    _EndMove = true;
+                    break;
+            }
+        });
+    }
+
+    #endregion Init
+
+    #region Update
 
     public void FixedUpdate()
     {
@@ -50,8 +121,8 @@ public class PlayerController : GenericController
             }
             else
             {
-                if(_PlayerView.IsDeadFlag == false)
-                ResetCombiMeter();
+                if (_PlayerView.IsDeadFlag == false)
+                    ResetCombiMeter();
                 RunCommand(false);
             }
         }
@@ -86,12 +157,9 @@ public class PlayerController : GenericController
         }
     }
 
-    private void RunCommand(bool ifRun)
-    {
+    #endregion Update
 
-        _PlayerView.RunEvent.Invoke(ifRun);
-        _PlayerViewAnim.SetTargetSpeed(ifRun ? 1 : 0);
-    }
+    #region Public Methods
 
     public void AddParent(Transform parent)
     {
@@ -108,7 +176,6 @@ public class PlayerController : GenericController
         _PlayerViewAnim.GetAnimator().Play(AnimConstants.ANIM_DIE);
 
         _PlayerView.DeadEvent.Invoke(true);
-
     }
 
     public void KillOnSpot()
@@ -126,68 +193,21 @@ public class PlayerController : GenericController
         KillParameters();
     }
 
+    #endregion Public Methods
+
+    #region Private Methods
+
+    private void RunCommand(bool ifRun)
+    {
+        _PlayerView.RunEvent.Invoke(ifRun);
+        _PlayerViewAnim.SetTargetSpeed(ifRun ? 1 : 0);
+    }
+
     private void KillParameters()
     {
         Collider.enabled = false;
         GetComponent<PlayerController>().RigidBody.constraints = RigidbodyConstraints.FreezeAll;
         _PlayerView.DeadEvent.Invoke(true);
-    }
-
-    private void Start()
-    {
-        _PlayerView.InjectAnim(_PlayerViewAnim);
-        _PlayerViewAnim.GetAnimator().Play(AnimConstants.ANIM_READY);
-        _PlayerView.TargetReachedEvent.AddListener(() =>
-        {
-            var temp = _PlayerModel.GetNextNode();
-            if (_LogTarget)
-            {
-                if(temp)
-                Debug.LogError("The node I got is : " + temp.gameObject.name);
-            }
-            if (temp == null)
-            {
-                if (_HasEnded)
-                    return;
-                _HasEnded = true;
-                if (_PlayerControlled)
-                    _GameStateObj.ChangeState.Invoke(GameStates.Win);
-                else
-                    _GameStateObj.ChangeState.Invoke(GameStates.Lose);
-
-                return;
-            }
-            if (temp.name == "TurnRight")
-                _PlayerView.TurnOnReach(PlayerView.Turn.Right);
-            if (temp.name == "TurnLeft")
-                _PlayerView.TurnOnReach(PlayerView.Turn.Left);
-            _PlayerView.TargetPosEvent.Invoke(temp.position);
-        });
-
-        _GameStateObj.ChangeState.AddListener(_ =>
-        {
-            switch (_)
-            {
-                case GameStates.Start:
-                    _PlayerView.SpeedEvent.Invoke(_PlayerModel.GetSpeed());
-                    _PlayerView.TargetPosEvent.Invoke(_PlayerModel.CurrentNode.position);
-                    _PlayerModel.UpdateState(CharacterStates.Idle);
-                    _PlayerViewAnim.GetAnimator().Play(AnimConstants.ANIM_IDLE);
-                    _HasStarted = true;
-                    break;
-
-                case GameStates.Results:
-                    _EndMove = true;
-                    break;
-                case GameStates.Win:
-                    ResetCombiMeter();
-                    _EndMove = true;
-                    break;
-                case GameStates.Lose:
-                    _EndMove = true;
-                    break;
-            }
-        });
     }
 
     private void ResetCombiMeter()
@@ -205,12 +225,35 @@ public class PlayerController : GenericController
     {
         if (_PlayerControlled)
         {
-            if (other.gameObject.name == "Surpass")
+            if (other.gameObject.name == Constants.SURPASS)
             {
                 _ScoreCombo++;
+                StartCoroutine(VFXStart());
                 Factory.Get<UIHandler>().AddScoreCombo(_ScoreCombo);
-
+            }
+            if (other.gameObject.name == Constants.CAM_LEFT)
+            {
+                _PlayerView
+                    ._EnableLeftCam.SetActive(true
+                    );
+            }
+            if (other.gameObject.name == Constants.CAM_RIGHT)
+            {
+                _PlayerView
+                    ._EnableRigthCam
+                    .SetActive(true
+                    );
             }
         }
     }
+
+    private IEnumerator VFXStart()
+    {
+        _AudioReward.Play();
+        _StarVFX.SetActive(true);
+        yield return new WaitForSeconds(.5f);
+        _StarVFX.SetActive(false);
+    }
+
+    #endregion Private Methods
 }

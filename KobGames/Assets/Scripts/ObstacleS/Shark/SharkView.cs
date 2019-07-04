@@ -59,7 +59,7 @@ public class SharkView : MonoBehaviour
         _StartPath = false;
     }
 
-    IEnumerator DelayWarningAnim()
+    private IEnumerator DelayWarningAnim()
     {
         _WarningSign.SetActive(true);
         yield return new WaitForSeconds(1.5f);
@@ -69,8 +69,6 @@ public class SharkView : MonoBehaviour
     public void InitWarningVFX()
     {
         StartCoroutine(DelayWarningAnim());
-       // GameObject obj = _StartAtLeft ? _RightVFXStart : _LeftVFXStart;
-       // obj.SetActive(true);
     }
 
     public void TriggerTrap(List<Vector3> path, bool startAtLeft)
@@ -80,15 +78,13 @@ public class SharkView : MonoBehaviour
         _NodePath = path;
         _TargetNode = _NodePath[0];
 
-        //_LeftVFXStart.SetActive(false);
         _LefVFXtEnd.SetActive(false);
         _RightVFXEnd.SetActive(false);
-        //_RightVFXStart.SetActive(false);
         _PathCounter = 0;
         _StartPath = true;
     }
 
-    IEnumerator DelayDeactivation()
+    private IEnumerator DelayDeactivation()
     {
         yield return new WaitForSeconds(.5f);
         _MovableTransform.gameObject.SetActive(false);

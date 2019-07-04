@@ -1,7 +1,4 @@
-﻿public class Enums
-{
-}
-
+﻿
 public enum GameStates
 {
     Title,
@@ -9,6 +6,12 @@ public enum GameStates
     Results,
     Win,
     Lose
+}
+
+public enum Turn
+{
+    Left,
+    Right
 }
 
 public enum CharacterStates

@@ -90,7 +90,7 @@ public class CannonHandler : GenericObstacle
         StartCoroutine(DelayShoot());
     }
 
-    IEnumerator DelayShoot()
+    private IEnumerator DelayShoot()
     {
         yield return new WaitForSeconds(.2f);
     }

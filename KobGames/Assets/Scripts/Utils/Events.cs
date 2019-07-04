@@ -2,10 +2,6 @@
 using UnityEngine;
 using UnityEngine.Events;
 
-public class Events
-{
-}
-
 [Serializable]
 public class GameStateEvent : UnityEvent<GameStates>
 {

@@ -61,13 +61,15 @@ public class PendulumController : GenericObstacle
             }
         });
     }
-    IEnumerator DelayVFXLeft()
+
+    private IEnumerator DelayVFXLeft()
     {
         _LeftVFX.SetActive(true);
         yield return new WaitForSeconds(.5f);
         _LeftVFX.SetActive(false);
     }
-    IEnumerator DelayVFXRight()
+
+    private IEnumerator DelayVFXRight()
     {
         _RightVFX.SetActive(true);
         yield return new WaitForSeconds(.5f);

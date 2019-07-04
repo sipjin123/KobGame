@@ -1,10 +1,6 @@
 ﻿using System;
 using UnityEngine;
 
-public class ClassCompilation
-{
-}
-
 [Serializable]
 public class PlatformSet
 {
@@ -16,4 +12,11 @@ public class SpawnObstacleSet
 {
     public Vector3 Pos, Rot;
     public ObstacleType Type;
+}
+
+[Serializable]
+public class SFXCombination
+{
+    public SFX SFX;
+    public AudioSource AudioSource;
 }

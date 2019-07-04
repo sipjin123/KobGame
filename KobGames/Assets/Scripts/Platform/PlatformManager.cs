@@ -41,32 +41,31 @@ public class PlatformManager : MonoBehaviour
         int platformCount = platformType.Count;
         for (int i = 0; i < platformCount; i++)
         {
-                PlatformController extractedPlatform = _PlatformPool.Find(_ => _.PlatformType == platformType[i]);
+            PlatformController extractedPlatform = _PlatformPool.Find(_ => _.PlatformType == platformType[i]);
 
-                if (isInitialized)
-                {
-                    isInitialized = false;
-                }
+            if (isInitialized)
+            {
+                isInitialized = false;
+            }
 
-                extractedPlatform.transform.position = _StartingSpawnPoint.position;
-                extractedPlatform.transform.eulerAngles = _StartingSpawnPoint.eulerAngles;
+            extractedPlatform.transform.position = _StartingSpawnPoint.position;
+            extractedPlatform.transform.eulerAngles = _StartingSpawnPoint.eulerAngles;
 
-                _PlatformPool.Remove(extractedPlatform);
-                _PlatformList.Add(extractedPlatform);
-                extractedPlatform.gameObject.SetActive(true);
+            _PlatformPool.Remove(extractedPlatform);
+            _PlatformList.Add(extractedPlatform);
+            extractedPlatform.gameObject.SetActive(true);
 
-                if (i >= platformCount - 1)
-                {
-                    SetupListeners();
-                    return;
-                }
-                var nextSpawnType = platformType[i + 1];
-                var nextExtect = extractedPlatform.PlatformModel.SpawnableNode.Find(_ => _.PlatformType == nextSpawnType);
+            if (i >= platformCount - 1)
+            {
+                SetupListeners();
+                return;
+            }
+            var nextSpawnType = platformType[i + 1];
+            var nextExtect = extractedPlatform.PlatformModel.SpawnableNode.Find(_ => _.PlatformType == nextSpawnType);
 
+            var nextSpawnPoint = nextExtect.SpawnPoint;
 
-                var nextSpawnPoint = nextExtect.SpawnPoint;
-
-                _StartingSpawnPoint = nextSpawnPoint;
+            _StartingSpawnPoint = nextSpawnPoint;
         }
     }
 
